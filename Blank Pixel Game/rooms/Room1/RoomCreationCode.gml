@@ -1,8 +1,9 @@
 /// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1
 /// @DnDHash : 0C0F0962
-/// @DnDArgument : "expr" "3"
-variable = 3;
+/// @DnDArgument : "expr" "18"
+/// @DnDArgument : "var" "Samurei"
+Samurei = 18;
 
 /// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1
