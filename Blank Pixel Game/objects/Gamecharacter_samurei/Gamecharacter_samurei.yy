@@ -1,11 +1,11 @@
 {
   "$GMObject":"",
-  "%Name":"Object2",
+  "%Name":"Gamecharacter_samurei",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":true,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"Object2",
+  "name":"Gamecharacter_samurei",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -30,8 +30,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Sprite4",
-    "path":"sprites/Sprite4/Sprite4.yy",
+    "name":"Samurei",
+    "path":"sprites/Samurei/Samurei.yy",
   },
   "spriteMaskId":null,
   "visible":true,

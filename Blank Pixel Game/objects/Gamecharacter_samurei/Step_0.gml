@@ -10,7 +10,16 @@ var l395443B8_0;l395443B8_0 = keyboard_check(ord("D"));if (l395443B8_0){	///
 	/// @DnDArgument : "x_relative" "1"
 	/// @DnDArgument : "y" "0"
 	/// @DnDArgument : "y_relative" "1"
-	x += 1;y += 0;}
+	x += 1;y += 0;
+
+	/// @DnDAction : YoYo Games.Instances.Set_Sprite
+	/// @DnDVersion : 1
+	/// @DnDHash : 6AD23C48
+	/// @DnDParent : 395443B8
+	/// @DnDArgument : "spriteind" "Samurei"
+	/// @DnDSaveInfo : "spriteind" "Samurei"
+	sprite_index = Samurei;
+	image_index = 0;}
 
 /// @DnDAction : YoYo Games.Mouse & Keyboard.If_Key_Down
 /// @DnDVersion : 1
@@ -38,7 +47,16 @@ var l202D60DC_0;l202D60DC_0 = keyboard_check(ord("A"));if (l202D60DC_0){	///
 	/// @DnDArgument : "x_relative" "1"
 	/// @DnDArgument : "y" "0"
 	/// @DnDArgument : "y_relative" "1"
-	x += -1;y += 0;}
+	x += -1;y += 0;
+
+	/// @DnDAction : YoYo Games.Instances.Set_Sprite
+	/// @DnDVersion : 1
+	/// @DnDHash : 4A2C39E9
+	/// @DnDParent : 202D60DC
+	/// @DnDArgument : "spriteind" "Flip_samurei"
+	/// @DnDSaveInfo : "spriteind" "Flip_samurei"
+	sprite_index = Flip_samurei;
+	image_index = 0;}
 
 /// @DnDAction : YoYo Games.Mouse & Keyboard.If_Key_Down
 /// @DnDVersion : 1
