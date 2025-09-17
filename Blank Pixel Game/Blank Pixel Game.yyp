@@ -37,8 +37,13 @@
   "resources":[
     {"id":{"name":"Gamecharacter_samuroi","path":"objects/Gamecharacter_samuroi/Gamecharacter_samuroi.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+<<<<<<< Updated upstream
     {"id":{"name":"exit_button_activ","path":"sprites/exit_button_activ/exit_button_activ.yy",},},
     {"id":{"name":"exit_button_passiv","path":"sprites/exit_button_passiv/exit_button_passiv.yy",},},
+=======
+    {"id":{"name":"block_with_line__2_","path":"sprites/block_with_line__2_/block_with_line__2_.yy",},},
+    {"id":{"name":"block","path":"sprites/block/block.yy",},},
+>>>>>>> Stashed changes
     {"id":{"name":"Flip_samurei","path":"sprites/Flip_samurei/Flip_samurei.yy",},},
     {"id":{"name":"play_button_activ","path":"sprites/play_button_activ/play_button_activ.yy",},},
     {"id":{"name":"play_button_passiv","path":"sprites/play_button_passiv/play_button_passiv.yy",},},
