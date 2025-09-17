@@ -35,7 +35,7 @@
   },
   "name":"Blank Pixel Game",
   "resources":[
-    {"id":{"name":"Gamecharacter_samurei","path":"objects/Gamecharacter_samurei/Gamecharacter_samurei.yy",},},
+    {"id":{"name":"Gamecharacter_samuroi","path":"objects/Gamecharacter_samuroi/Gamecharacter_samuroi.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"Flip_samurei","path":"sprites/Flip_samurei/Flip_samurei.yy",},},
     {"id":{"name":"Samurei","path":"sprites/Samurei/Samurei.yy",},},
