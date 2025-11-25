@@ -6,9 +6,13 @@ https://konradzuseschule-my.sharepoint.com/:w:/r/personal/michael_schmidt_konrad
 
 24.10.25-25.20 Gemacht das man nicht durch objekte kann:
 <img width="932" height="536" alt="grafik" src="https://github.com/user-attachments/assets/dc95f0f0-cc5e-4f2b-8402-7075e8b0e806" /> 
+
 sowie Player Position on runtime gespeichert:
+
 <img width="312" height="349" alt="grafik" src="https://github.com/user-attachments/assets/07188416-6ef1-49e6-a552-0f8a6f828ab3" /> 
+
 und player bewegung aktualusiert/neugemacht:
+
 <img width="688" height="595" alt="grafik" src="https://github.com/user-attachments/assets/a1ae4720-a68a-4c14-8f95-d52543c9330e" />
 
 
