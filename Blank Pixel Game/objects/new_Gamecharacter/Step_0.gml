@@ -28,7 +28,8 @@ if keyboard_check_pressed(vk_escape)
  room_goto(Startscreen);
 }
 
-if (place_meeting(x,y, Object9))
+
+/*if (place_meeting(x,y, go_to_room_lausgang))
 {	
   global.Pos_x = 1300;
   global.Pos_y = 320; 
@@ -40,4 +41,4 @@ if (place_meeting(x, y, Object9_1))
  global.Pos_x = 20;
  global.Pos_y = 320;
  room_goto(TestRoom);
-}
+}*/
