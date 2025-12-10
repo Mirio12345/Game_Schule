@@ -2,7 +2,7 @@
   "$GMObject":"",
   "%Name":"go_to_room_lausgang",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"new_Gamecharacter","path":"objects/new_Gamecharacter/new_Gamecharacter.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"new_Gamecharacter_1","path":"objects/new_Gamecharacter_1/new_Gamecharacter_1.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"go_to_room_lausgang",
