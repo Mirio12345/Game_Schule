@@ -27,3 +27,17 @@ if keyboard_check_pressed(vk_escape)
  global.Pos_y = y;
  room_goto(Startscreen);
 }
+
+if (place_meeting(x,y, Object9))
+{	
+  global.Pos_x = 1300;
+  global.Pos_y = 320; 
+  room_goto(lausgang);
+}
+
+if (place_meeting(x, y, Object9_1))
+{
+ global.Pos_x = 20;
+ global.Pos_y = 320;
+ room_goto(TestRoom);
+}
