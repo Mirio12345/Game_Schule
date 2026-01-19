@@ -9,7 +9,7 @@ var _up = keyboard_check(ord("W"));
 var xinput = _right - _left;
 var yinput = _down	- _up;
 
-move_and_collide(xinput * my_speed, yinput * my_speed, [Object5,Object6])
+move_and_collide(xinput * my_speed, yinput * my_speed, [Wall,Halfwall])
 
 if keyboard_check_pressed(ord("A"))
 {
