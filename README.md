@@ -22,6 +22,14 @@ Amin hat die map dem Storyboard angepasst
 
 24.11.2025: Update des Worldmap für das Spiel mit + 1 Stadt
 
+
 <img width="1024" height="720" alt="links ausgang1" src="https://github.com/user-attachments/assets/f3304140-9859-44cc-bb18-9afde011e5c8" />
 
 01.12.2025: Update des Maps mit +1 Room
+
+<img width="3000" height="3000" alt="Gravenlord-export" src="https://github.com/user-attachments/assets/44204dbd-8f0f-418d-b206-1d4f800dc018" />
+
+
+04.02.2026: Erster Konzept des Spielmaps von Gravenlord
+
+
