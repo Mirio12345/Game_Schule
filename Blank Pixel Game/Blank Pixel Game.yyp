@@ -33,7 +33,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.14.2.213",
+    "IDEVersion":"2024.14.3.217",
   },
   "name":"Blank Pixel Game",
   "resources":[
@@ -61,6 +61,7 @@
     {"id":{"name":"lausgang","path":"rooms/lausgang/lausgang.yy",},},
     {"id":{"name":"Startscreen","path":"rooms/Startscreen/Startscreen.yy",},},
     {"id":{"name":"TestRoom","path":"rooms/TestRoom/TestRoom.yy",},},
+    {"id":{"name":"checkpoint","path":"sprites/checkpoint/checkpoint.yy",},},
     {"id":{"name":"enimetest","path":"sprites/enimetest/enimetest.yy",},},
     {"id":{"name":"exit_button_activ","path":"sprites/exit_button_activ/exit_button_activ.yy",},},
     {"id":{"name":"exit_button_passiv","path":"sprites/exit_button_passiv/exit_button_passiv.yy",},},
