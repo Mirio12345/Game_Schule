@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"redCheckpoint",
-    "path":"sprites/redCheckpoint/redCheckpoint.yy",
+    "name":"checkpoint",
+    "path":"sprites/checkpoint/checkpoint.yy",
   },
   "spriteMaskId":null,
   "visible":true,
