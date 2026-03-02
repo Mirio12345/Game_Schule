@@ -5,6 +5,6 @@ try
 }
 catch(_error)
 {
-	global.curent_room = TestRoom;
+	global.curent_room = Startroom_battle;
 	room_goto(global.curent_room);
 }

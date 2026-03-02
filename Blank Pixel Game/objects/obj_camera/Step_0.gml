@@ -1,14 +1,14 @@
 
 // Zoom in with 'Z', Zoom out with 'X'
 if (keyboard_check(ord("Z"))) {
-    zoom_level -= 0.01;
+    zoom_level -= 0.02;
 }
 if (keyboard_check(ord("X"))) {
-    zoom_level += 0.01;
+    zoom_level += 0.02;
 }
 
 // Clamp zoom so it doesn't flip or get too huge
-zoom_level = clamp(zoom_level, 0.1, 5.0);
+zoom_level = clamp(zoom_level, 0.3, 2.0);
 
 // Apply the new size to the camera
 var new_w = default_zoom_width * zoom_level;

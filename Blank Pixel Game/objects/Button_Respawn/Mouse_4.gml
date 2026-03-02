@@ -18,3 +18,9 @@ if global.latest_checkpoint == 2
 	global.Pos_y = 340
 	room_goto(lausgang)
 }
+if global.latest_checkpoint == 3
+{
+	global.Pos_x = 333
+	global.Pos_y = 237
+	room_goto(Checkpoint_3_Startbattleroom)
+}
