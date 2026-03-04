@@ -1,47 +1,59 @@
-if (instance_exists(new_Gamecharacter_1)) {
-    
-    // Calculate distance to player
-    var dist = point_distance(x, y, new_Gamecharacter_1.x, new_Gamecharacter_1.y);
-    
-    // Check Line of Sight
-    // collision_line checks from enemy(x,y) to player(x,y). 
-    // It returns 'noone' if the line is clear of obj_wall.
-    var has_line_of_sight = collision_line(x, y, new_Gamecharacter_1.x, new_Gamecharacter_1.y, [Wall,Halfwall], false, false) == noone;
+// Wenn der Spieler nicht existiert, brechen wir ab (verhindert Abstürze)
+if (!instance_exists(obj_player)) exit;
 
-    // BEHAVIOR LOGIC
-    // If the player is close enough to be seen AND there are no walls in the way
-    if (dist <= sight_range && has_line_of_sight) {
-        
-        // Always look at the player if spotted
-        image_angle = point_direction(x, y, new_Gamecharacter_1.x, new_Gamecharacter_1.y);
-        
-        // If we are too far away, move closer
-        if (dist > attack_range) {
-            // mp_potential_step tries to move towards target while avoiding solid objects
-            mp_potential_step(new_Gamecharacter_1.x, new_Gamecharacter_1.y, move_speed, false);
-        } 
-        else {
-            // We are within attack range, so STOP moving
-            speed = 0;
-            
-            // SHOOTING LOGIC
-            if (can_shoot) {
+// 1. Distanz und Sichtlinie berechnen
+var dist = point_distance(x, y, obj_player.x, obj_player.y);
 
-				var _bullet = instance_create_depth(x, y, depth - 1, obj_enemy_bullet);
-                
-                // Give the bullet speed and direction
-                _bullet.speed = bullet_speed;
-                _bullet.direction = image_angle; // Shoot where enemy is facing
-                _bullet.image_angle = image_angle;
-                
-                // Reset cooldown
-                can_shoot = false;
-                alarm[0] = fire_rate;
-            }
-        }
-    } 
-    else {
-        // OPTIONAL: If player is lost/out of sight, stop moving
+// collision_line zieht einen unsichtbaren Strich. Wenn obj_wall im Weg ist, ist has_los = false
+var has_los = !collision_line(x, y, obj_player.x, obj_player.y, obj_wall, false, true);
+
+// 2. Zustand (State) bestimmen
+if (dist <= sight_range && has_los) {
+    // Er sieht dich und du bist in Reichweite
+    state = "shoot";
+} else if (dist <= hearing_range) {
+    // Er sieht dich nicht (z.B. hinter einer Ecke), aber hört dich
+    state = "chase";
+} else {
+    // Du bist zu weit weg
+    state = "idle";
+}
+
+// Richtung zum Spieler prüfen
+if (obj_player.x < x) {
+    // Links vom Gegner
+    image_xscale = -abs(image_xscale); 
+} else {
+    // Rechts vom Gegner
+    image_xscale = abs(image_xscale);
+}
+// 3. Aktionen basierend auf dem Zustand ausführen
+
+switch (state) {
+    case "idle":
         speed = 0;
+        break;
+
+    case "chase":
+        mp_potential_step(obj_player.x, obj_player.y, move_speed, false);
+        // WICHTIG: Hier muss ein break hin!
+        break;
+
+case "shoot":
+    speed = 0;
+
+if (can_shoot) {
+    // Wir erstellen die Kugel exakt im Zentrum
+    var bullet = instance_create_depth(x, y, -1, obj_enimy_bullet);
+    
+    with (bullet) {
+        direction = point_direction(x, y, obj_player.x, obj_player.y);
+        image_angle = direction;
+        speed = 8;
     }
+    
+    can_shoot = false;
+    alarm[0] = shoot_cooldown;
+}
+    break;
 }
