@@ -38,3 +38,23 @@ Amin hat die map dem Storyboard angepasst
 
 23.02.2026: Weiterarbeit bei der Konzept des Spielmaps von Gravenlord. Der gewünschte Bazar wurde hinzugefügt
 
+
+
+<img width="770" height="445" alt="image" src="https://github.com/user-attachments/assets/0cd49c4c-b74b-40ed-9fb2-ecfbe70a61d0" />
+
+
+04.03.2026: Wurde eine Skizze zu ersten Level ins Spielprojekt hinzugefügt und Bewegungskript mit zooming funktioniert
+
+<img width="341" height="246" alt="image" src="https://github.com/user-attachments/assets/a7fa5c7e-797e-41a8-b401-5a420ddf29de" />
+
+Objekte ins Spiel erstmal
+
+<img width="1133" height="899" alt="image" src="https://github.com/user-attachments/assets/f5c4cd95-b53c-4bc2-b6d8-35f9284393e0" />
+
+StartScreen
+
+<img width="1035" height="765" alt="image" src="https://github.com/user-attachments/assets/b0c474b5-b40e-487f-abcd-182536062d1d" />
+
+<img width="1047" height="761" alt="image" src="https://github.com/user-attachments/assets/528b4ca9-5f37-4880-ace2-102475445175" />
+
+Bewegungsskript
