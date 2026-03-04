@@ -12,3 +12,4 @@ state = "idle";        // "idle", "chase", oder "shoot"
 
 obj_player = new_Gamecharacter_1;
 obj_wall = Wall;
+obj_bullet = obj_enimy_bullet;
