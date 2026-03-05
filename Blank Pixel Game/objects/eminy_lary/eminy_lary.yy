@@ -36,8 +36,8 @@
   "resourceVersion":"2.0",
   "solid":true,
   "spriteId":{
-    "name":"enimetest",
-    "path":"sprites/enimetest/enimetest.yy",
+    "name":"roboter_nach_s_den_laufen",
+    "path":"sprites/roboter_nach_s_den_laufen/roboter_nach_s_den_laufen.yy",
   },
   "spriteMaskId":null,
   "visible":true,
