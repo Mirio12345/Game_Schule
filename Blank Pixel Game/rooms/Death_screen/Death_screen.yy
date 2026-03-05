@@ -19,8 +19,8 @@
   ],
   "name":"Death_screen",
   "parent":{
-    "name":"Rooms",
-    "path":"folders/Rooms.yy",
+    "name":"Menu",
+    "path":"folders/Rooms/Menu.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

@@ -10,8 +10,8 @@
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"Button_Base","path":"objects/Button_Base/Button_Base.yy",},"propertyId":{"name":"Button_Text","path":"objects/Button_Base/Button_Base.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Zoom 1",},
   ],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Buttons",
+    "path":"folders/Objects/Buttons.yy",
   },
   "parentObjectId":{
     "name":"Button_Base",

@@ -24,3 +24,9 @@ if global.latest_checkpoint == 3
 	global.Pos_y = 237
 	room_goto(Startroom_battle)
 }
+if global.latest_checkpoint == 4
+{
+	global.Pos_x =264;
+	global.Pos_y =475;
+	room_goto(Fight_many);
+}

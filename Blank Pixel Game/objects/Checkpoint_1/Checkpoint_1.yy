@@ -6,8 +6,8 @@
   "name":"Checkpoint_1",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Checkpoints",
+    "path":"folders/Objects/Checkpoints.yy",
   },
   "parentObjectId":null,
   "persistent":false,

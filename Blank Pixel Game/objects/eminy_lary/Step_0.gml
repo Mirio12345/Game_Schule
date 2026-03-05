@@ -11,6 +11,21 @@ if (dist <= sight_range && has_los) state = "shoot";
 else if (dist <= hearing_range) state = "chase";
 else state = "idle";
 
+// Get the direction to the player in degrees (0-360)
+var _dir = point_direction(x, y, obj_player.x, obj_player.y);
+
+if (speed > 0 || state == "chase") {
+    var _move_dir = direction; 
+    
+    // 2. Convert 0-360 into 0, 1, 2, or 3 (Right, Up, Left, Down)
+    // We add 45 to "offset" the zones so 0 degrees (Right) is a 90-degree slice
+    face = round(_move_dir / 90) % 4; 
+}
+
+// Divide 360 degrees by 90 to get 4 directions
+// Adding 45 ensures the "Right" slice sits centered at 0 degrees
+var _face = round(_dir / 90) % 4;
+
 switch (state) {
     case "idle":
         speed = 0;
@@ -18,16 +33,9 @@ switch (state) {
         break;
 
     case "chase":
-        mp_potential_step(obj_player.x, obj_player.y, move_speed, false);
-        // Flip the sprite based on player position
-		sprite_index = roboter_nach_rechts_laufen;
-		if (obj_player.x < x) {
-			image_xscale = -1.3; // Face Left
-		} else {
-			image_xscale = 1.3;  // Face Right
-		}
-        // Match animation speed to movement (optional)
-        image_speed = 0.7; 
+       mp_potential_step(obj_player.x, obj_player.y, move_speed, false);
+        sprite_index = walk_sprites[face];
+        image_speed = 1; // Full walking speed
         break;
 
     case "shoot":

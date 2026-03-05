@@ -8,8 +8,8 @@
   "name":"Room_persistens",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"RoomShit",
+    "path":"folders/Objects/RoomShit.yy",
   },
   "parentObjectId":null,
   "persistent":false,

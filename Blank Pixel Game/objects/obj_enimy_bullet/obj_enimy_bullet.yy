@@ -13,8 +13,8 @@
   "name":"obj_enimy_bullet",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Enimy",
+    "path":"folders/Objects/Enimy.yy",
   },
   "parentObjectId":null,
   "persistent":false,

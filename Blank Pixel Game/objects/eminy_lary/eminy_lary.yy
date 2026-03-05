@@ -11,8 +11,8 @@
   "name":"eminy_lary",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Enimy",
+    "path":"folders/Objects/Enimy.yy",
   },
   "parentObjectId":{
     "name":"Wall_class",

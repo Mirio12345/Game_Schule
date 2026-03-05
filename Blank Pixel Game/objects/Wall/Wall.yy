@@ -6,8 +6,8 @@
   "name":"Wall",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"RoomShit",
+    "path":"folders/Objects/RoomShit.yy",
   },
   "parentObjectId":{
     "name":"Wall_class",
