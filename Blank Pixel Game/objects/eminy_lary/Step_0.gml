@@ -1,5 +1,8 @@
 if (!instance_exists(obj_player)) exit;
 
+if ( hp <= 0) {
+	instance_destroy(self)	
+}
 var dist = point_distance(x, y, obj_player.x, obj_player.y);
 var has_los = !collision_line(x, y, obj_player.x, obj_player.y, obj_wall, false, true);
 

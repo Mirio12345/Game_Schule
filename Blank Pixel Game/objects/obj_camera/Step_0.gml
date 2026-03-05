@@ -1,3 +1,12 @@
+try 
+{
+	zoom_level = global.zoom_level_character
+}
+catch(_error)
+{
+	global.zoom_level_character = 1.2
+	zoom_level = global.zoom_level_character
+}
 
 // Zoom in with 'Z', Zoom out with 'X'
 if (keyboard_check(ord("Z"))) {

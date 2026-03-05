@@ -7,9 +7,10 @@ move_speed = 2;
 shoot_cooldown = 60;   // Wie lange er zwischen Schüssen wartet (60 Frames = ca. 1 Sekunde)
 can_shoot = true;
 
+hp  = 70;
 // Aktueller Zustand
 state = "idle";        // "idle", "chase", oder "shoot"
 
 obj_player = new_Gamecharacter_1;
-obj_wall = Wall;
+obj_wall = Wall_class;
 obj_bullet = obj_enimy_bullet;

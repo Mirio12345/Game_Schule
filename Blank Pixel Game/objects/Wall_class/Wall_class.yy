@@ -1,18 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"enimy_lary",
+  "%Name":"Wall_class",
   "eventList":[],
   "managed":true,
-  "name":"enimy_lary",
+  "name":"Wall_class",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
     "path":"folders/Objects.yy",
   },
-  "parentObjectId":{
-    "name":"eminy_base",
-    "path":"objects/eminy_base/eminy_base.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -30,10 +27,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"enimetest",
-    "path":"sprites/enimetest/enimetest.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }
