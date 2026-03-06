@@ -1,6 +1,6 @@
 
 if (instance_exists(other)) {
-    global.player_hp -= 8; 
+    global.player_hp -= global.enemyDMG; 
 
 }
 

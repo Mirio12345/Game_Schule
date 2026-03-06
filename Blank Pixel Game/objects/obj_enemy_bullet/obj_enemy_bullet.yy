@@ -1,6 +1,6 @@
 {
   "$GMObject":"",
-  "%Name":"obj_enimy_bullet",
+  "%Name":"obj_enemy_bullet",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
@@ -10,11 +10,11 @@
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_enimy_bullet",
+  "name":"obj_enemy_bullet",
   "overriddenProperties":[],
   "parent":{
-    "name":"Enimy",
-    "path":"folders/Objects/Enimy.yy",
+    "name":"Enemy",
+    "path":"folders/Objects/Enemy.yy",
   },
   "parentObjectId":null,
   "persistent":false,

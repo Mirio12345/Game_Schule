@@ -1,6 +1,6 @@
 {
   "$GMObject":"",
-  "%Name":"eminy_lary",
+  "%Name":"emeny_lary",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
@@ -8,11 +8,11 @@
     {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_player_bullet","path":"objects/obj_player_bullet/obj_player_bullet.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"eminy_lary",
+  "name":"emeny_lary",
   "overriddenProperties":[],
   "parent":{
-    "name":"Enimy",
-    "path":"folders/Objects/Enimy.yy",
+    "name":"Enemy",
+    "path":"folders/Objects/Enemy.yy",
   },
   "parentObjectId":{
     "name":"Wall_class",
