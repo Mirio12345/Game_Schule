@@ -7,7 +7,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Checkpoints",
-    "path":"folders/Objects/Checkpoints.yy",
+    "path":"folders/Checkpoints.yy",
   },
   "parentObjectId":{
     "name":"Wall_class",

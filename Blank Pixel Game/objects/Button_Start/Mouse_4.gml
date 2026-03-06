@@ -5,6 +5,7 @@ try
 }
 catch(_error)
 {
+	global.difficulity = 1;
 	global.playerDMG = 20;
 global.max_player_hp = 100;
 global.playerSpeed = 2.5;

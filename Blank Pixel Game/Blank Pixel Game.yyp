@@ -16,7 +16,7 @@
     {"$GMFolder":"","%Name":"Notes","folderPath":"folders/Notes.yy","name":"Notes","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Objects","folderPath":"folders/Objects.yy","name":"Objects","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Buttons","folderPath":"folders/Objects/Buttons.yy","name":"Buttons","resourceType":"GMFolder","resourceVersion":"2.0",},
-    {"$GMFolder":"","%Name":"Checkpoints","folderPath":"folders/Objects/Checkpoints.yy","name":"Checkpoints","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Checkpoints","folderPath":"folders/Checkpoints.yy","name":"Checkpoints","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Enemy","folderPath":"folders/Objects/Enemy.yy","name":"Enemy","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Player","folderPath":"folders/Objects/Player.yy","name":"Player","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"RoomShit","folderPath":"folders/Objects/RoomShit.yy","name":"RoomShit","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -43,7 +43,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.14.3.217",
+    "IDEVersion":"2024.1400.4.1003",
   },
   "name":"Blank Pixel Game",
   "resources":[
@@ -55,6 +55,7 @@
     {"id":{"name":"Button_Hard","path":"objects/Button_Hard/Button_Hard.yy",},},
     {"id":{"name":"Button_normal","path":"objects/Button_normal/Button_normal.yy",},},
     {"id":{"name":"Button_Quit","path":"objects/Button_Quit/Button_Quit.yy",},},
+    {"id":{"name":"Button_reset","path":"objects/Button_reset/Button_reset.yy",},},
     {"id":{"name":"Button_Respawn","path":"objects/Button_Respawn/Button_Respawn.yy",},},
     {"id":{"name":"Button_Settings","path":"objects/Button_Settings/Button_Settings.yy",},},
     {"id":{"name":"Button_Start","path":"objects/Button_Start/Button_Start.yy",},},
