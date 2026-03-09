@@ -8,7 +8,14 @@ global.enemyDMG = 8;
 global.enemyHP = 60;
 global.enemySpeed = 2;
 global.enemyCooldown = 60;
+try
+{
 if global.player_hp  >=  120
+{
+global.player_hp = 120;
+}
+}
+catch(_error)
 {
 global.player_hp = 120;
 }
