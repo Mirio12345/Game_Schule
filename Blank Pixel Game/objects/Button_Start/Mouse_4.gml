@@ -18,7 +18,11 @@ catch(_error)
 	global.enemySpeed = 2;
 	global.enemyCooldown = 60;
 	//enimy boss
-	
+	global.enimy_roadbossDMG = 15;
+	global.enimy_roadbossHP = 300;
+	global.enimy_roadbossSpeed = 1;
+	global.enimy_roadbossCooldown = 20;
+
 	global.curent_room = Startroom_battle;
 
 	room_goto(global.curent_room);

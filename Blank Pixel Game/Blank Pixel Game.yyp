@@ -43,12 +43,13 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.14.3.217",
+    "IDEVersion":"2024.1400.4.1003",
   },
   "name":"Blank Pixel Game",
   "resources":[
     {"id":{"name":"Main_menu_font","path":"fonts/Main_menu_font/Main_menu_font.yy",},},
     {"id":{"name":"Back_to_Start","path":"objects/Back_to_Start/Back_to_Start.yy",},},
+    {"id":{"name":"boss","path":"objects/boss/boss.yy",},},
     {"id":{"name":"Button_Base","path":"objects/Button_Base/Button_Base.yy",},},
     {"id":{"name":"Button_Dominic","path":"objects/Button_Dominic/Button_Dominic.yy",},},
     {"id":{"name":"Button_easy","path":"objects/Button_easy/Button_easy.yy",},},
@@ -84,6 +85,7 @@
     {"id":{"name":"Zoom_to_14","path":"objects/Zoom_to_14/Zoom_to_14.yy",},},
     {"id":{"name":"Zoom_to_16","path":"objects/Zoom_to_16/Zoom_to_16.yy",},},
     {"id":{"name":"Zoom_to1","path":"objects/Zoom_to1/Zoom_to1.yy",},},
+    {"id":{"name":"bossfight","path":"rooms/bossfight/bossfight.yy",},},
     {"id":{"name":"Death_screen","path":"rooms/Death_screen/Death_screen.yy",},},
     {"id":{"name":"Fight_many","path":"rooms/Fight_many/Fight_many.yy",},},
     {"id":{"name":"lausgang","path":"rooms/lausgang/lausgang.yy",},},
@@ -142,6 +144,7 @@
     {"roomId":{"name":"Startroom_battle","path":"rooms/Startroom_battle/Startroom_battle.yy",},},
     {"roomId":{"name":"Settingsscreen","path":"rooms/Settingsscreen/Settingsscreen.yy",},},
     {"roomId":{"name":"Fight_many","path":"rooms/Fight_many/Fight_many.yy",},},
+    {"roomId":{"name":"bossfight","path":"rooms/bossfight/bossfight.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[

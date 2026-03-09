@@ -10,6 +10,12 @@ global.enemyDMG = 12;
 global.enemyHP = 100;
 global.enemySpeed = 2.5;
 global.enemyCooldown = 40;
+//enimy_roadboss
+global.enimy_roadbossDMG = 25;
+global.enimy_roadbossHP = 350;
+global.enimy_roadbossSpeed = 1;
+global.enimy_roadbossCooldown = 10;
+
 if global.player_hp  >=  80
 {
 global.player_hp = 80;
