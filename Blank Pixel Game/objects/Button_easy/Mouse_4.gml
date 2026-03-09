@@ -1,9 +1,11 @@
 event_inherited();
 global.difficulity = 0;
+//player
 global.playerDMG = 25;
 global.max_player_hp = 120;
 global.playerSpeed = 2.5;
 global.playerCooldown = 30;
+//enimy lary
 global.enemyDMG = 8;
 global.enemyHP = 60;
 global.enemySpeed = 2;
