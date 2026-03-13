@@ -6,16 +6,19 @@ Todo:
 - Shader system fur crazy Visioals
 - (Gewisse Story einbindung)(Mishi)
 - (Controller einbindung)
+
 (Maxim)
 - Gamecharacter Sprites!!
 - room sprites overwork/neue
 - Chest Sprite Offen und zu
 - Random raum stuff wie schilde
 - (Menu Designen)
+  
 (Amin)
 - Boss weiter machen
 - Boss raum
 - Level Layout
+
 (Mishi)
 - Maxim/Amin Helfen
 - Gamemaker Lanuage Lernen/Im Game etwas "Programieren"
