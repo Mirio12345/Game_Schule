@@ -1,5 +1,6 @@
-Todo:
-(David)
+#Todo:
+
+###(David)
 - Heal System
 - Besseres Checkpoint System
 - Vollstaendiges "Level"
@@ -7,19 +8,19 @@ Todo:
 - (Gewisse Story einbindung)(Mishi)
 - (Controller einbindung)
 
-(Maxim)
+###(Maxim)
 - Gamecharacter Sprites!!
 - room sprites overwork/neue
 - Chest Sprite Offen und zu
 - Random raum stuff wie schilde
 - (Menu Designen)
   
-(Amin)
+###(Amin)
 - Boss weiter machen
 - Boss raum
 - Level Layout
 
-(Mishi)
+###(Mishi)
 - Maxim/Amin Helfen
 - Gamemaker Lanuage Lernen/Im Game etwas "Programieren"
 - Level Layout
