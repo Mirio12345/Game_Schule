@@ -20,7 +20,7 @@
 - Boss raum
 - Level Layout
 
-### (Mishi)
+### (Michi)
 - Maxim/Amin Helfen
 - Gamemaker Lanuage Lernen/Im Game etwas "Programieren"
 - Level Layout
