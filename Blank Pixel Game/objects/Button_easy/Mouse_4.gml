@@ -4,8 +4,11 @@ global.difficulity = 0;
 global.playerDMG = 25;
 global.max_player_hp = 120;
 global.playerSpeed = 2.5;
-global.playerCooldown = 30;
+global.playerShootCooldown = 30;
 global.HealValue = global.max_player_hp / 1;
+global.HealitemCount = 3;
+global.MaxHealitemCount = 3;
+global.HealCooldown =300;
 //enimy lary
 global.enemyDMG = 8;
 global.enemyHP = 60;

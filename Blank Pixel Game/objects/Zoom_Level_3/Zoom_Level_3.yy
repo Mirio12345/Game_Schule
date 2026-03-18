@@ -1,11 +1,11 @@
 {
   "$GMObject":"",
-  "%Name":"Zoom_to1",
+  "%Name":"Zoom_Level_3",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":4,"eventType":6,"isDnD":true,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"Zoom_to1",
+  "name":"Zoom_Level_3",
   "overriddenProperties":[
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"Button_Base","path":"objects/Button_Base/Button_Base.yy",},"propertyId":{"name":"Button_Text","path":"objects/Button_Base/Button_Base.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Zoom 3",},
   ],

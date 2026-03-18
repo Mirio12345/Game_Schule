@@ -1,13 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"Zoom_to_16",
+  "%Name":"Zoom_Level_4",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":4,"eventType":6,"isDnD":true,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"Zoom_to_16",
+  "name":"Zoom_Level_4",
   "overriddenProperties":[
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"Button_Base","path":"objects/Button_Base/Button_Base.yy",},"propertyId":{"name":"Button_Text","path":"objects/Button_Base/Button_Base.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Zoom 6",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"Button_Base","path":"objects/Button_Base/Button_Base.yy",},"propertyId":{"name":"Button_Text","path":"objects/Button_Base/Button_Base.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Default 4 ",},
   ],
   "parent":{
     "name":"Buttons",
