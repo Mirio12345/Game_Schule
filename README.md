@@ -5,6 +5,7 @@
 - Besseres Checkpoint System
 - Vollstaendiges "Level"
 - Shader system fur crazy Visioals
+- Entity für roommanagement z.B. die Tür geht nur auf wenn alle Tod sind
 - (Gewisse Story einbindung)(Mishi)
 - (Controller einbindung)
 
