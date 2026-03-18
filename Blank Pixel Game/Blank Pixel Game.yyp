@@ -43,7 +43,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.1400.4.1003",
+    "IDEVersion":"2024.14.3.217",
   },
   "name":"Blank Pixel Game",
   "resources":[
@@ -71,6 +71,7 @@
     {"id":{"name":"go_to_room_StartBattleroom","path":"objects/go_to_room_StartBattleroom/go_to_room_StartBattleroom.yy",},},
     {"id":{"name":"go_to_room_testroom","path":"objects/go_to_room_testroom/go_to_room_testroom.yy",},},
     {"id":{"name":"Halfwall","path":"objects/Halfwall/Halfwall.yy",},},
+    {"id":{"name":"Healitem","path":"objects/Healitem/Healitem.yy",},},
     {"id":{"name":"Hp_bar","path":"objects/Hp_bar/Hp_bar.yy",},},
     {"id":{"name":"new_Gamecharacter_1","path":"objects/new_Gamecharacter_1/new_Gamecharacter_1.yy",},},
     {"id":{"name":"obj_camera","path":"objects/obj_camera/obj_camera.yy",},},
@@ -121,6 +122,7 @@
     {"id":{"name":"Room_Spawn_Wall","path":"sprites/Room_Spawn_Wall/Room_Spawn_Wall.yy",},},
     {"id":{"name":"Room_Spawn","path":"sprites/Room_Spawn/Room_Spawn.yy",},},
     {"id":{"name":"Room_Wall","path":"sprites/Room_Wall/Room_Wall.yy",},},
+    {"id":{"name":"s_Healitem","path":"sprites/s_Healitem/s_Healitem.yy",},},
     {"id":{"name":"Samurei","path":"sprites/Samurei/Samurei.yy",},},
     {"id":{"name":"set_button_activ","path":"sprites/set_button_activ/set_button_activ.yy",},},
     {"id":{"name":"set_button_passiv","path":"sprites/set_button_passiv/set_button_passiv.yy",},},

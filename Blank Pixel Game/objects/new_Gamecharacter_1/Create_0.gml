@@ -1,6 +1,7 @@
 my_speed = 2.5;
 shoot_cooldown = global.playerCooldown;   // Wie lange er zwischen Schüssen wartet (60 Frames = ca. 1 Sekunde)
 can_shoot = true;
+can_heal = true;
 try 
 {
 	hp = global.player_hp;

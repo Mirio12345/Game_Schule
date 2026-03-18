@@ -12,6 +12,8 @@ catch(_error)
 	global.max_player_hp = 100;
 	global.playerSpeed = 2.5;
 	global.playerCooldown = 30;
+	global.HealValue = global.max_player_hp / 2;
+	global.HealMultiplier = 1;
 	//enimy lary
 	global.enemyDMG = 10;
 	global.enemyHP = 70;

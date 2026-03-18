@@ -17,6 +17,20 @@ if hp <= 0
 	room_goto(Death_screen);
 }
 
+if keyboard_check(ord("E"))
+{
+	if global.HealitemCount > 0
+	{
+		global.HealitemCount = global.HealitemCount - 1
+		if (global.player_hp + (global.HealValue * global.HealMultiplier)) < global.max_player_hp
+		{
+			global.player_hp = global.player_hp + (global.HealValue * global.HealMultiplier);
+		}
+	}
+	can_heal = false;
+	alarm[1] = 60;
+}
+
 if keyboard_check_pressed(vk_escape)
 {
  global.Pos_x = x;

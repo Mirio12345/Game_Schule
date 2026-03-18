@@ -5,6 +5,7 @@ global.playerDMG = 25;
 global.max_player_hp = 120;
 global.playerSpeed = 2.5;
 global.playerCooldown = 30;
+global.HealValue = global.max_player_hp / 1;
 //enimy lary
 global.enemyDMG = 8;
 global.enemyHP = 60;
