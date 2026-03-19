@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"NotInUse",
-    "path":"folders/Sprites/NotInUse.yy",
+    "name":"RoomShit",
+    "path":"folders/Sprites/RoomShit.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

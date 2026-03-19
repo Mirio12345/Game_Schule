@@ -9,7 +9,7 @@ var _up = keyboard_check(ord("W"));
 var xinput = _right - _left;
 var yinput = _down	- _up;
 
-move_and_collide(xinput * my_speed, yinput * my_speed, [Wall,Halfwall])
+move_and_collide(xinput * my_speed, yinput * my_speed, [Wall,Halfwall,Wall_class])
 
 if hp <= 0
 {
@@ -17,6 +17,8 @@ if hp <= 0
 	room_goto(Death_screen);
 }
 
+
+//Keyboard checks
 if keyboard_check_pressed(vk_escape)
 {
  global.Pos_x = x;
@@ -24,6 +26,25 @@ if keyboard_check_pressed(vk_escape)
  global.curentroom = room;
  room_goto(Startscreen);
 }
+
+if (keyboard_check(ord("E"))  && can_heal && (hp != global.max_player_hp))
+{
+	if global.HealitemCount > 0
+	{
+		global.HealitemCount = global.HealitemCount - 1
+		if ((global.player_hp + (global.HealValue * global.HealMultiplier))  <= global.max_player_hp)
+		{
+			global.player_hp = global.player_hp + (global.HealValue * global.HealMultiplier);
+		}
+		else
+		{
+			global.player_hp = global.max_player_hp;
+		}
+	}
+	can_heal = false;
+	alarm[1] = drink_cooldown;
+}
+
 if (mouse_check_button_pressed(mb_left) && can_shoot) 
 {
     // 1. Richtung zur Maus im Room berechnen
@@ -43,3 +64,33 @@ if (mouse_check_button_pressed(mb_left) && can_shoot)
     can_shoot = false;
     alarm[0] = shoot_cooldown;
 }
+
+//Checkpoint System
+if keyboard_check(ord("R"))
+{
+	if  distance_to_object(Checkpoint_3_Startbattleroom) < 5
+	{
+		global.Pos_x = x;
+		global.Pos_y = y;
+		if (global.latest_checkpoint != 3) {
+		global.latest_checkpoint = 3;
+		}
+		global.HealitemCount = global.MaxHealitemCount;
+		global.player_hp = global.max_player_hp;
+		room_persistent = false;
+		room_restart();
+	}
+	if  distance_to_object(Checkpoint_4_Fightroom) <  5
+	{
+		global.Pos_x = x;
+		global.Pos_y = y;
+		if (global.latest_checkpoint != 4) {
+		global.latest_checkpoint = 4;
+		}
+		global.HealitemCount = global.MaxHealitemCount;
+		global.player_hp = global.max_player_hp;
+		room_persistent = false;
+		room_restart();
+	}
+}
+
