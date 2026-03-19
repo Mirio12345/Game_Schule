@@ -1,6 +1,7 @@
 event_inherited();
 
 global.player_hp = global.max_player_hp;
+global.HealitemCount = global.MaxHealitemCount;
 
 if global.latest_checkpoint == 0
 {
