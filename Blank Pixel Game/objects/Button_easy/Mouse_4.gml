@@ -12,7 +12,7 @@ global.HealCooldown =300;
 //enimy lary
 global.enemyDMG = 8;
 global.enemyHP = 60;
-global.enemySpeed = 2;
+global.enemySpeed = 3.5;
 global.enemyCooldown = 60;
 //enimy_roadboss
 global.enimy_roadbossDMG = 10;
