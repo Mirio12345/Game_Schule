@@ -3,7 +3,7 @@ global.difficulity = 0;
 //player
 global.playerDMG = 25;
 global.max_player_hp = 120;
-global.playerSpeed = 2.5;
+global.playerSpeed = 2.25;
 global.playerShootCooldown = 30;
 global.HealValue = global.max_player_hp / 1;
 global.HealitemCount = 3;
@@ -12,7 +12,7 @@ global.HealCooldown =300;
 //enimy lary
 global.enemyDMG = 8;
 global.enemyHP = 60;
-global.enemySpeed = 3.5;
+global.enemySpeed = 2.8;
 global.enemyCooldown = 60;
 //enimy_roadboss
 global.enimy_roadbossDMG = 10;
