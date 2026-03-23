@@ -96,7 +96,7 @@
     {"id":{"name":"TestRoom","path":"rooms/TestRoom/TestRoom.yy",},},
     {"id":{"name":"candlestand","path":"sprites/candlestand/candlestand.yy",},},
     {"id":{"name":"checkpoint","path":"sprites/checkpoint/checkpoint.yy",},},
-    {"id":{"name":"Chest","path":"sprites/Chest/Chest.yy",},},
+    {"id":{"name":"Chest1","path":"sprites/Chest1/Chest1.yy",},},
     {"id":{"name":"exit_button_activ","path":"sprites/exit_button_activ/exit_button_activ.yy",},},
     {"id":{"name":"exit_button_passiv","path":"sprites/exit_button_passiv/exit_button_passiv.yy",},},
     {"id":{"name":"Fight_room","path":"sprites/Fight_room/Fight_room.yy",},},

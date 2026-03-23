@@ -17,6 +17,7 @@
     {"name":"inst_2F5B1647","path":"rooms/Startroom_battle/Startroom_battle.yy",},
     {"name":"inst_3254EA28","path":"rooms/Startroom_battle/Startroom_battle.yy",},
     {"name":"inst_C037C13","path":"rooms/Startroom_battle/Startroom_battle.yy",},
+    {"name":"inst_43994486","path":"rooms/Startroom_battle/Startroom_battle.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -28,6 +29,7 @@
       ],"layers":[],"name":"Instances_1","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Instances_3","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v4","%Name":"inst_1D5B7282","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_1D5B7282","objectId":{"name":"Checkpoint_3_Startbattleroom","path":"objects/Checkpoint_3_Startbattleroom/Checkpoint_3_Startbattleroom.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":458.0,"y":283.0,},
+        {"$GMRInstance":"v4","%Name":"inst_43994486","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_43994486","objectId":{"name":"chest_1","path":"objects/chest_1/chest_1.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":192.0,"y":207.0,},
       ],"layers":[],"name":"Instances_3","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRAssetLayer":"","%Name":"Assets_1","assets":[
         {"$GMRSpriteGraphic":"v1","%Name":"graphic_7D6EC715","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"name":"graphic_7D6EC715","resourceType":"GMRSpriteGraphic","resourceVersion":"2.0","rotation":0.0,"scaleX":1.5625,"scaleY":1.6012526,"spriteId":{"name":"Room_Spawn_Wall","path":"sprites/Room_Spawn_Wall/Room_Spawn_Wall.yy",},"x":0.0,"y":0.0,},
