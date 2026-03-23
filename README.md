@@ -33,22 +33,36 @@
 
 ### Buttons:
 Difficulity Buttons funktionieren alle nach dem selben prinzip das sie wichtige Variablen wie den Schaden Erhöhen:
+
 <img width="896" height="592" alt="image" src="https://github.com/user-attachments/assets/811ad420-9a09-409f-97c4-1642cc13bf94" />
+
 Bei anderen geht er meistens nur in einen anderen Raum:
+
 <img width="899" height="593" alt="image" src="https://github.com/user-attachments/assets/3fe60055-43c2-49ee-a090-eccf5ba1e5f9" />
+
 Bei den Zoom Buttons Setzt man genauso eine Zoom Variable:
+
 <img width="655" height="591" alt="image" src="https://github.com/user-attachments/assets/a98bec52-3e5d-4ccc-9f28-516a287ef5fc" />
+
 ### Die Checkpoints
 haben keinen Code weil deren Logic im Player sind:
+
 <img width="148" height="91" alt="image" src="https://github.com/user-attachments/assets/69800ecf-e5bc-4b95-bd8b-feb2e0a368fb" />
+
 ### Gegner
 Der Gegner hat verschiedene "States" in der er ist wie chase, shoot und idle:
+
 <img width="735" height="903" alt="image" src="https://github.com/user-attachments/assets/b9c828ff-0176-4e6c-a0ec-67848cb09b06" />
+
 ### Player
 Im player wird vieles wie movement Healing Checkpoint Cheking Ins Menu gehen und weiteres gemanaged.
+
 ### Andere Objekte
+
 <img width="181" height="225" alt="image" src="https://github.com/user-attachments/assets/4bb8bde0-c729-444a-8662-895252b4bb48" />
+
 Sie sind wie die Checkpoints "Dumme Objekte" und werden hauptsächlich von anderen Objekten benutzt.
+
 ### Übersicht aller Räume:
 <img width="1057" height="595" alt="image" src="https://github.com/user-attachments/assets/63baec7a-4fe4-4a5f-bde3-9de882f19611" />
 <img width="954" height="540" alt="image" src="https://github.com/user-attachments/assets/2e6151e9-9d30-4b5c-8568-59428ae1074c" />
