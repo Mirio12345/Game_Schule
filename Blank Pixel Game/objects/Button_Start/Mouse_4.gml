@@ -18,7 +18,7 @@ catch(_error)
 	global.MaxHealitemCount = 2;
 	global.HealCooldown = 300;
 	//enemy lary
-	global.enemyDMG = 15;
+	global.enemyDMG = 18;
 	global.enemyHP = 70;
 	global.enemySpeed = 2.8;
 	global.enemyCooldown = 45;
