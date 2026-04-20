@@ -43,7 +43,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.14.4.222",
+    "IDEVersion":"2024.1400.4.1003",
   },
   "name":"Blank Pixel Game",
   "resources":[
@@ -94,6 +94,7 @@
     {"id":{"name":"Startroom_battle","path":"rooms/Startroom_battle/Startroom_battle.yy",},},
     {"id":{"name":"Startscreen","path":"rooms/Startscreen/Startscreen.yy",},},
     {"id":{"name":"TestRoom","path":"rooms/TestRoom/TestRoom.yy",},},
+    {"id":{"name":"Bossraum","path":"sprites/Bossraum/Bossraum.yy",},},
     {"id":{"name":"candlestand","path":"sprites/candlestand/candlestand.yy",},},
     {"id":{"name":"checkpoint","path":"sprites/checkpoint/checkpoint.yy",},},
     {"id":{"name":"Chest1","path":"sprites/Chest1/Chest1.yy",},},
