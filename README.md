@@ -6,7 +6,7 @@
 - Vollstaendiges "Level"
 - Shader system fur crazy Visioals
 - Entity für roommanagement z.B. die Tür geht nur auf wenn alle Tod sind
-- (Gewisse Story einbindung)(Mishi)
+- (Gewisse Story einbindung)(Michi)
 - (Controller einbindung)
 
 ### (Maxim)
@@ -18,11 +18,11 @@
   
 ### (Amin)
 - Boss weiter machen
-- Boss raum
+- Boss raum ✔️
 - Level Layout
 
 ### (Michi)
-- Difficulty Anpassen
+- Difficulty Anpassen 🆗
 - Maxim/Amin Helfen
 - Gamemaker Lanuage Lernen/Im Game etwas "Programieren"
 - Level Layout
