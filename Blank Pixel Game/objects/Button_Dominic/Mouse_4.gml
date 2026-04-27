@@ -15,7 +15,7 @@ global.enemyHP = 150;
 global.enemySpeed = 2.8;
 global.enemyCooldown = 20;
 //enimy_roadboss
-global.enimy_roadbossDMG = 30;
+global.enimy_roadbossDMG = 100;
 global.enimy_roadbossHP = 600;
 global.enimy_roadbossSpeed = 5;
 global.enimy_roadbossCooldown = 5;
@@ -29,5 +29,5 @@ global.player_hp = 100;
 }
 catch(_error)
 {
-global.player_hp = 60;
+global.player_hp = 100;
 }
