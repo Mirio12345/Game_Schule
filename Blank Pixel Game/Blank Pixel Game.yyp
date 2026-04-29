@@ -43,7 +43,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.14.4.222",
+    "IDEVersion":"2024.1400.4.1003",
   },
   "name":"Blank Pixel Game",
   "resources":[
@@ -66,6 +66,7 @@
     {"id":{"name":"Checkpoint_4_Fightroom","path":"objects/Checkpoint_4_Fightroom/Checkpoint_4_Fightroom.yy",},},
     {"id":{"name":"chest_1","path":"objects/chest_1/chest_1.yy",},},
     {"id":{"name":"enemy_lary","path":"objects/enemy_lary/enemy_lary.yy",},},
+    {"id":{"name":"go_to_room_Bossroom","path":"objects/go_to_room_Bossroom/go_to_room_Bossroom.yy",},},
     {"id":{"name":"go_to_room_Fight_many","path":"objects/go_to_room_Fight_many/go_to_room_Fight_many.yy",},},
     {"id":{"name":"go_to_room_lausgang","path":"objects/go_to_room_lausgang/go_to_room_lausgang.yy",},},
     {"id":{"name":"go_to_room_StartBattleroom","path":"objects/go_to_room_StartBattleroom/go_to_room_StartBattleroom.yy",},},

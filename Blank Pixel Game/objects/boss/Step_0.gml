@@ -26,6 +26,18 @@ if (speed > 0 || state == "chase") {
 // Adding 45 ensures the "Right" slice sits centered at 0 degrees
 var _face = round(_dir / 90) % 4;
 
+
+count = global.bossCount
+
+image_index = count
+
+if global.bossCount > 0
+	{
+		global.bossCount = global.bossCount - 1
+		instance_create_depth(x+ 20,y + 20, -1, enemy_lary);
+		global.bossCount = 10
+	}
+	
 switch (state) {
     case "idle":
         speed = 0;

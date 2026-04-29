@@ -6,6 +6,7 @@ var _down = keyboard_check(ord("S"));
 var _left = keyboard_check(ord("A"));
 var _up = keyboard_check(ord("W"));
 
+
 var xinput = _right - _left;
 var yinput = _down	- _up;
 
