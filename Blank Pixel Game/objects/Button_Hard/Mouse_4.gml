@@ -19,6 +19,11 @@ global.enimy_roadbossDMG = 25;
 global.enimy_roadbossHP = 350;
 global.enimy_roadbossSpeed = 1;
 global.enimy_roadbossCooldown = 10;
+//enemy_boss_lary
+global.enemy_boss_lary_DMG = 10;
+global.enemy_boss_lary_HP = 70;
+global.enemy_boss_lary_Speed = 1.8;
+global.enemy_boss_lary_Cooldown = 60;
 
 if global.player_hp  >=  100
 {

@@ -1,3 +1,0 @@
-if timer = false{
-  
-}

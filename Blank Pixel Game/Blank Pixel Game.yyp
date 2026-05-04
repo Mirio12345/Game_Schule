@@ -49,7 +49,6 @@
   "resources":[
     {"id":{"name":"Main_menu_font","path":"fonts/Main_menu_font/Main_menu_font.yy",},},
     {"id":{"name":"Back_to_Start","path":"objects/Back_to_Start/Back_to_Start.yy",},},
-    {"id":{"name":"boss","path":"objects/boss/boss.yy",},},
     {"id":{"name":"Button_Base","path":"objects/Button_Base/Button_Base.yy",},},
     {"id":{"name":"Button_Dominic","path":"objects/Button_Dominic/Button_Dominic.yy",},},
     {"id":{"name":"Button_easy","path":"objects/Button_easy/Button_easy.yy",},},
@@ -65,7 +64,9 @@
     {"id":{"name":"Checkpoint_3_Startbattleroom","path":"objects/Checkpoint_3_Startbattleroom/Checkpoint_3_Startbattleroom.yy",},},
     {"id":{"name":"Checkpoint_4_Fightroom","path":"objects/Checkpoint_4_Fightroom/Checkpoint_4_Fightroom.yy",},},
     {"id":{"name":"chest_1","path":"objects/chest_1/chest_1.yy",},},
+    {"id":{"name":"enemy_boss_lary","path":"objects/enemy_boss_lary/enemy_boss_lary.yy",},},
     {"id":{"name":"enemy_lary","path":"objects/enemy_lary/enemy_lary.yy",},},
+    {"id":{"name":"enemy_roadboss","path":"objects/enemy_roadboss/enemy_roadboss.yy",},},
     {"id":{"name":"go_to_room_Bossroom","path":"objects/go_to_room_Bossroom/go_to_room_Bossroom.yy",},},
     {"id":{"name":"go_to_room_Fight_many","path":"objects/go_to_room_Fight_many/go_to_room_Fight_many.yy",},},
     {"id":{"name":"go_to_room_lausgang","path":"objects/go_to_room_lausgang/go_to_room_lausgang.yy",},},
