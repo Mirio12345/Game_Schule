@@ -46,9 +46,11 @@ if (keyboard_check(ord("E"))  && can_heal && (hp != global.max_player_hp))
 	alarm[1] = drink_cooldown;
 }
 
-if (mouse_check_button_pressed(mb_left) && can_shoot) 
+
+
+if (mouse_check_button(mb_left) && can_shoot)
 {
-    // 1. Richtung zur Maus im Room berechnen
+	// 1. Richtung zur Maus im Room berechnen
     var dir_to_mouse = point_direction(x, y, mouse_x, mouse_y);
     
     // 2. Kugel erstellen
@@ -81,12 +83,24 @@ if keyboard_check(ord("R"))
 		room_persistent = false;
 		room_restart();
 	}
-	if  distance_to_object(Checkpoint_4_Fightroom) <  5
+	if  distance_to_object(Checkpoint_4_Battle1) <  5
 	{
 		global.Pos_x = x;
 		global.Pos_y = y;
 		if (global.latest_checkpoint != 4) {
 		global.latest_checkpoint = 4;
+		}
+		global.HealitemCount = global.MaxHealitemCount;
+		global.player_hp = global.max_player_hp;
+		room_persistent = false;
+		room_restart();
+	}
+	if  distance_to_object(Checkpoint_5_Battle2) <  5
+	{
+		global.Pos_x = x;
+		global.Pos_y = y;
+		if (global.latest_checkpoint != 5) {
+		global.latest_checkpoint = 5;
 		}
 		global.HealitemCount = global.MaxHealitemCount;
 		global.player_hp = global.max_player_hp;

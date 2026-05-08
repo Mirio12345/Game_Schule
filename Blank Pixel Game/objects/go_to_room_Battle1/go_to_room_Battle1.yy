@@ -1,11 +1,11 @@
 {
   "$GMObject":"",
-  "%Name":"go_to_room_Fight_many",
+  "%Name":"go_to_room_Battle1",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"new_Gamecharacter_1","path":"objects/new_Gamecharacter_1/new_Gamecharacter_1.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"go_to_room_Fight_many",
+  "name":"go_to_room_Battle1",
   "overriddenProperties":[],
   "parent":{
     "name":"RoomShit",

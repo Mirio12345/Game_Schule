@@ -35,6 +35,13 @@ if global.latest_checkpoint == 4
 	global.curent_room = Battle1
 	room_goto(Battle1);
 }
+if global.latest_checkpoint == 5
+{
+	global.Pos_x = 1121;
+	global.Pos_y = 644;
+	global.curent_room = Battle2
+	room_goto(Battle2);
+}
 
 //Found easyer method for:
 //if global.difficulity = 0

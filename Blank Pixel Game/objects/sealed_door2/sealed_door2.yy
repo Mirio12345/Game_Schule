@@ -1,13 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"Checkpoint_4_Fightroom",
+  "%Name":"sealed_door2",
   "eventList":[],
   "managed":true,
-  "name":"Checkpoint_4_Fightroom",
+  "name":"sealed_door2",
   "overriddenProperties":[],
   "parent":{
-    "name":"Checkpoints",
-    "path":"folders/Objects/Checkpoints.yy",
+    "name":"RoomShit",
+    "path":"folders/Objects/RoomShit.yy",
   },
   "parentObjectId":{
     "name":"Wall_class",
@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"checkpoint",
-    "path":"sprites/checkpoint/checkpoint.yy",
+    "name":"Sprite15",
+    "path":"sprites/Sprite15/Sprite15.yy",
   },
   "spriteMaskId":null,
   "visible":true,

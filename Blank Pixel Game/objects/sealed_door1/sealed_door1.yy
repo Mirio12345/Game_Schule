@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"sealed_door",
+  "%Name":"sealed_door1",
   "eventList":[],
   "managed":true,
-  "name":"sealed_door",
+  "name":"sealed_door1",
   "overriddenProperties":[],
   "parent":{
     "name":"RoomShit",
