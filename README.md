@@ -58,3 +58,19 @@ StartScreen
 <img width="1047" height="761" alt="image" src="https://github.com/user-attachments/assets/528b4ca9-5f37-4880-ace2-102475445175" />
 
 Bewegungsskript
+
+Stand: 11.05.2026
+
+<img width="784" height="436" alt="image" src="https://github.com/user-attachments/assets/f8889da2-eba7-4040-aef3-856433806980" />
+
+Mit Bossraum weitergearbeitet (ist erstmal fertig)
+
+<img width="274" height="118" alt="image" src="https://github.com/user-attachments/assets/0f0539b5-2aef-4ce4-8eff-aa1dd9508c7e" />
+
+die Gegner, die dich angreifen (enemy_boss_lary ist Gegner der mit den Boss jede 5 Sekunden erscheint)
+
+<img width="339" height="337" alt="image" src="https://github.com/user-attachments/assets/11c3a711-194c-47c5-98e4-6a8f201e2406" />
+
+von Maxim: der Chest wurde hinzugefügt
+
+
