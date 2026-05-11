@@ -85,6 +85,5 @@ der Heilungsmitel (Zigaretten) wurde hinzugefügt
 
 <img width="833" height="477" alt="image" src="https://github.com/user-attachments/assets/877bc95c-5048-4540-9f6f-705adc19c61d" />
 
-<img width="833" height="477" alt="image" src="https://github.com/user-attachments/assets/d7d4be7c-8335-4687-a0c6-fb9560f15ebc" />
 
 insgesamt 3 Levels vorhanden (inklusive Bossraum)
