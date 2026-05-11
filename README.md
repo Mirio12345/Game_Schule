@@ -73,4 +73,18 @@ die Gegner, die dich angreifen (enemy_boss_lary ist Gegner der mit den Boss jede
 
 von Maxim: der Chest wurde hinzugefügt
 
+<img width="322" height="90" alt="image" src="https://github.com/user-attachments/assets/56c600a7-4225-4795-ae3b-c9bb5caef51d" />
 
+der Heilungsmitel (Zigaretten) wurde hinzugefügt
+
+<img width="345" height="117" alt="image" src="https://github.com/user-attachments/assets/1637a4e1-ca29-4735-825f-62bcc1a3047e" />
+
+<img width="813" height="459" alt="image" src="https://github.com/user-attachments/assets/5a483631-bc3f-44c4-83dc-3d103fbc7933" />
+
+<img width="719" height="488" alt="image" src="https://github.com/user-attachments/assets/2cb9e197-67ac-456c-851c-f79b9b6284fa" />
+
+<img width="833" height="477" alt="image" src="https://github.com/user-attachments/assets/877bc95c-5048-4540-9f6f-705adc19c61d" />
+
+<img width="833" height="477" alt="image" src="https://github.com/user-attachments/assets/d7d4be7c-8335-4687-a0c6-fb9560f15ebc" />
+
+insgesamt 3 Levels vorhanden (inklusive Bossraum)
