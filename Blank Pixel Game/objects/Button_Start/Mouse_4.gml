@@ -12,6 +12,7 @@ catch(_error)
 	global.max_player_hp = 100;
 	global.playerSpeed = 2.25;
 	global.playerShootCooldown = 30;
+	global.playerReflectCooldown = 30;
 	global.HealValue = global.max_player_hp / 2;
 	global.HealMultiplier = 1;
 	global.HealitemCount = 2;
@@ -33,6 +34,7 @@ catch(_error)
 	global.enemy_boss_lary_Speed = 1.8;
 	global.enemy_boss_lary_Cooldown = 60;
 
+	global.bulletSpeed = 10;
 	global.curent_room = Startroom_battle;
 
 	room_goto(global.curent_room);

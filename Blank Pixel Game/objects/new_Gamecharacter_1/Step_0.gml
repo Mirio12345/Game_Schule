@@ -60,12 +60,26 @@ if (mouse_check_button(mb_left) && can_shoot)
     with (bullet) {
         direction = dir_to_mouse;
         image_angle = dir_to_mouse;
-        speed = 8;
+        speed = global.bulletSpeed;
     }
     
     // 4. Cooldown aktivieren
     can_shoot = false;
     alarm[0] = shoot_cooldown;
+}
+if (mouse_check_button(mb_right) && can_reflect)
+{
+	var _parry_radius = 100; // How close the bullet needs to be
+    
+    // Find all bullets within the radius
+    with (obj_enemy_bullet) {
+        if (point_distance(x, y, other.x, other.y) < _parry_radius) {
+            
+            instance_destroy(self);
+        }
+    }
+	can_reflect = false;
+	alarm[2] = reflect_cooldown;
 }
 
 //Checkpoint System

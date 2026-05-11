@@ -5,6 +5,7 @@ global.playerDMG = 25;
 global.max_player_hp = 100;
 global.playerSpeed = 2.25;
 global.playerShootCooldown = 30;
+global.playerReflectCooldown = 30;
 global.HealValue = global.max_player_hp / 1;
 global.HealitemCount = 3;
 global.MaxHealitemCount = 3;
@@ -25,6 +26,7 @@ global.enemy_boss_lary_HP = 30;
 global.enemy_boss_lary_Speed = 1.0;
 global.enemy_boss_lary_Cooldown = 80;
 
+global.bulletSpeed = 10;
 try
 {
 if global.player_hp  >=  100

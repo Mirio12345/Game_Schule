@@ -46,7 +46,7 @@ switch (state) {
             var bullet = instance_create_depth(x, y, -1, obj_bullet);
             bullet.direction = dir_to_player;
             bullet.image_angle = dir_to_player;
-            bullet.speed = 8;
+            bullet.speed = global.bulletSpeed;
 
             can_shoot = false;
 

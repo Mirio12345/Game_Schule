@@ -84,8 +84,8 @@
   ],
   "name":"Battle2",
   "parent":{
-    "name":"Rooms",
-    "path":"folders/Rooms.yy",
+    "name":"PlayableRooms",
+    "path":"folders/Rooms/PlayableRooms.yy",
   },
   "parentRoom":null,
   "physicsSettings":{
