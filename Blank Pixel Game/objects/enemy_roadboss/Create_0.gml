@@ -17,7 +17,7 @@ obj_bullet = obj_roadboss_bullet;
 
 
 
-walk_sprites = [roboter_nach_rechts_laufen, roboter_nach_norden_laufen, roboter_nach_links_laufen, roboter_nach_s_den_laufen];
+walk_sprites = [roboter_nach_rechts_laufen, roboter_nach_norden_laufen, roboter_nach_links_laufen, roboter_nach_sueden_den_laufen];
 // idle_sprites = [spr_enemy_idle_right, spr_enemy_idle_up, spr_enemy_idle_left, spr_enemy_idle_down];
 face = 3;
 

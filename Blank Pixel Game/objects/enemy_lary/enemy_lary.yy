@@ -36,8 +36,8 @@
   "resourceVersion":"2.0",
   "solid":true,
   "spriteId":{
-    "name":"roboter_nach_s_den_laufen",
-    "path":"sprites/roboter_nach_s_den_laufen/roboter_nach_s_den_laufen.yy",
+    "name":"roboter_nach_sueden_den_laufen",
+    "path":"sprites/roboter_nach_sueden_den_laufen/roboter_nach_sueden_den_laufen.yy",
   },
   "spriteMaskId":null,
   "visible":true,
