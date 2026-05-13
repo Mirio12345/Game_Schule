@@ -79,11 +79,23 @@ der Heilungsmitel (Zigaretten) wurde hinzugefügt
 
 <img width="345" height="117" alt="image" src="https://github.com/user-attachments/assets/1637a4e1-ca29-4735-825f-62bcc1a3047e" />
 
+
 <img width="813" height="459" alt="image" src="https://github.com/user-attachments/assets/5a483631-bc3f-44c4-83dc-3d103fbc7933" />
 
+
 <img width="719" height="488" alt="image" src="https://github.com/user-attachments/assets/2cb9e197-67ac-456c-851c-f79b9b6284fa" />
+
 
 <img width="833" height="477" alt="image" src="https://github.com/user-attachments/assets/877bc95c-5048-4540-9f6f-705adc19c61d" />
 
 
 insgesamt 3 Levels vorhanden (inklusive Bossraum)
+
+
+Stand: 13.05.2026
+
+
+<img width="234" height="93" alt="image" src="https://github.com/user-attachments/assets/b84ad7ba-576d-4565-a1b5-a8f33bd1f55c" />
+
+
+Der Schaden von Gegner wurde gefixt (jeder Gegner macht sein vorgegebenes Schaden)
