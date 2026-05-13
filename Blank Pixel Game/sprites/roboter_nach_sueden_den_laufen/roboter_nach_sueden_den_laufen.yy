@@ -1,6 +1,6 @@
 {
   "$GMSprite":"v2",
-  "%Name":"roboter_nach_s_den_laufen",
+  "%Name":"roboter_nach_sueden_den_laufen",
   "bboxMode":0,
   "bbox_bottom":48,
   "bbox_left":20,
@@ -28,7 +28,7 @@
   "layers":[
     {"$GMImageLayer":"","%Name":"55058eda-86ee-4faa-b1f4-a7601364937d","blendMode":0,"displayName":"default","isLocked":false,"name":"55058eda-86ee-4faa-b1f4-a7601364937d","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
-  "name":"roboter_nach_s_den_laufen",
+  "name":"roboter_nach_sueden_den_laufen",
   "nineSlice":null,
   "origin":4,
   "parent":{
@@ -40,7 +40,7 @@
   "resourceVersion":"2.0",
   "sequence":{
     "$GMSequence":"v1",
-    "%Name":"roboter_nach_s_den_laufen",
+    "%Name":"roboter_nach_sueden_den_laufen",
     "autoRecord":true,
     "backdropHeight":768,
     "backdropImageOpacity":0.5,
@@ -64,7 +64,7 @@
       "resourceType":"KeyframeStore<MomentsEventKeyframe>",
       "resourceVersion":"2.0",
     },
-    "name":"roboter_nach_s_den_laufen",
+    "name":"roboter_nach_sueden_den_laufen",
     "playback":1,
     "playbackSpeed":10.0,
     "playbackSpeedType":0,
@@ -76,28 +76,28 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"91abfe79-5b0a-4d8b-ab7c-c8013f7a5ea8","path":"sprites/roboter_nach_s_den_laufen/roboter_nach_s_den_laufen.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"91abfe79-5b0a-4d8b-ab7c-c8013f7a5ea8","path":"sprites/roboter_nach_sueden_den_laufen/roboter_nach_sueden_den_laufen.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"336d3c65-c681-4b73-b7e9-f8f9cb7e7aeb","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"91d70485-8648-40bd-8028-678687c6608f","path":"sprites/roboter_nach_s_den_laufen/roboter_nach_s_den_laufen.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"91d70485-8648-40bd-8028-678687c6608f","path":"sprites/roboter_nach_sueden_den_laufen/roboter_nach_sueden_den_laufen.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"e9112cd8-41b8-42c5-901b-8b6c60c8e722","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"56bdc849-6a22-4cd0-a6f7-9f24d622f2ea","path":"sprites/roboter_nach_s_den_laufen/roboter_nach_s_den_laufen.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"56bdc849-6a22-4cd0-a6f7-9f24d622f2ea","path":"sprites/roboter_nach_sueden_den_laufen/roboter_nach_sueden_den_laufen.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"95f47e91-e16a-4d01-89c2-246639c7f7a2","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"9966566c-264d-437e-b264-361d22a529cb","path":"sprites/roboter_nach_s_den_laufen/roboter_nach_s_den_laufen.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"9966566c-264d-437e-b264-361d22a529cb","path":"sprites/roboter_nach_sueden_den_laufen/roboter_nach_sueden_den_laufen.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"c6fe2acd-addc-452e-9b95-2e47293e4e0f","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"91eceb31-4e3e-4121-ae6c-e19d1c321fd7","path":"sprites/roboter_nach_s_den_laufen/roboter_nach_s_den_laufen.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"91eceb31-4e3e-4121-ae6c-e19d1c321fd7","path":"sprites/roboter_nach_sueden_den_laufen/roboter_nach_sueden_den_laufen.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"647f0fa2-b9b6-4605-bf4c-b79d262671bb","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"fc4a24c2-ce4f-46a3-875c-bbc55f1800ba","path":"sprites/roboter_nach_s_den_laufen/roboter_nach_s_den_laufen.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"fc4a24c2-ce4f-46a3-875c-bbc55f1800ba","path":"sprites/roboter_nach_sueden_den_laufen/roboter_nach_sueden_den_laufen.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"ecd1944e-9a3e-4a38-8ba0-f9c75b0441ab","IsCreationKey":false,"Key":5.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"24128fe2-3ea2-45b8-970b-316b5ccc6316","path":"sprites/roboter_nach_s_den_laufen/roboter_nach_s_den_laufen.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"24128fe2-3ea2-45b8-970b-316b5ccc6316","path":"sprites/roboter_nach_sueden_den_laufen/roboter_nach_sueden_den_laufen.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"adaa936e-552f-4c7f-a507-4b925c836957","IsCreationKey":false,"Key":6.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"3e392d23-7a49-4ca0-bd83-7281fa94ec7e","path":"sprites/roboter_nach_s_den_laufen/roboter_nach_s_den_laufen.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"3e392d23-7a49-4ca0-bd83-7281fa94ec7e","path":"sprites/roboter_nach_sueden_den_laufen/roboter_nach_sueden_den_laufen.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"dbd79ba7-42ea-43c7-8809-5a3394e1a229","IsCreationKey":false,"Key":7.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
