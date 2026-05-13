@@ -44,7 +44,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.1400.5.1055",
+    "IDEVersion":"2024.1400.4.1003",
   },
   "name":"Blank Pixel Game",
   "resources":[
@@ -80,8 +80,10 @@
     {"id":{"name":"Hp_bar","path":"objects/Hp_bar/Hp_bar.yy",},},
     {"id":{"name":"new_Gamecharacter_1","path":"objects/new_Gamecharacter_1/new_Gamecharacter_1.yy",},},
     {"id":{"name":"obj_camera","path":"objects/obj_camera/obj_camera.yy",},},
+    {"id":{"name":"obj_enemy_boss_bullet","path":"objects/obj_enemy_boss_bullet/obj_enemy_boss_bullet.yy",},},
     {"id":{"name":"obj_enemy_bullet","path":"objects/obj_enemy_bullet/obj_enemy_bullet.yy",},},
     {"id":{"name":"obj_player_bullet","path":"objects/obj_player_bullet/obj_player_bullet.yy",},},
+    {"id":{"name":"obj_roadboss_bullet","path":"objects/obj_roadboss_bullet/obj_roadboss_bullet.yy",},},
     {"id":{"name":"Room_persistens","path":"objects/Room_persistens/Room_persistens.yy",},},
     {"id":{"name":"Room_Spawner_Ba1","path":"objects/Room_Spawner_Ba1/Room_Spawner_Ba1.yy",},},
     {"id":{"name":"Room_Spawner_Ba2","path":"objects/Room_Spawner_Ba2/Room_Spawner_Ba2.yy",},},

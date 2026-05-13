@@ -13,7 +13,7 @@ state = "idle";        // "idle", "chase", oder "shoot"
 
 obj_player = new_Gamecharacter_1;
 obj_wall = Wall_class;
-obj_bullet = obj_enemy_bullet;
+obj_bullet = obj_enemy_boss_bullet;
 
 
 walk_sprites = [roboter_nach_rechts_laufen, roboter_nach_norden_laufen, roboter_nach_links_laufen, roboter_nach_s_den_laufen];

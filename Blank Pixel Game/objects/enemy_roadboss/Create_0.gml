@@ -13,7 +13,7 @@ state = "idle";        // "idle", "chase", oder "shoot"
 
 obj_player = new_Gamecharacter_1;
 obj_wall = Wall_class;
-obj_bullet = obj_enemy_bullet;
+obj_bullet = obj_roadboss_bullet;
 
 
 
