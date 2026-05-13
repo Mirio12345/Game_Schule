@@ -12,12 +12,33 @@ var yinput = _down	- _up;
 
 move_and_collide(xinput * my_speed, yinput * my_speed, [Wall,Halfwall,Wall_class])
 
+
 if hp <= 0
 {
 	room_persistent = false;
 	room_goto(Death_screen);
 }
 
+if xinput < 0
+{
+	sprite_index = walk_sprites[2];
+}
+if xinput > 0
+{
+	sprite_index = walk_sprites[0];
+}
+if yinput < 0
+{
+	sprite_index = walk_sprites[1];
+}
+if yinput > 0
+{
+	sprite_index = walk_sprites[3];
+}
+if xinput == 0 && yinput == 0
+{
+	sprite_index = Gamecharacter_standart;
+}
 
 //Keyboard checks
 if keyboard_check_pressed(vk_escape)

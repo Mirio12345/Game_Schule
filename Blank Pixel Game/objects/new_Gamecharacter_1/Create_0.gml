@@ -5,6 +5,9 @@ drink_cooldown = global.HealCooldown;
 can_shoot = true;
 can_heal = true;
 can_reflect = true;
+
+walk_sprites = [Gamecharacter_nach_rechts_laufen,Gamecharacter_nach_norden_laufen,Gamecharacter_nach_links_laufen,Gamecharacter_nach_sueden_laufen];
+face = 3;
 try 
 {
 	hp = global.player_hp;

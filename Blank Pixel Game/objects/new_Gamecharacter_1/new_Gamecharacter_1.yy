@@ -37,8 +37,8 @@
   "resourceVersion":"2.0",
   "solid":true,
   "spriteId":{
-    "name":"GamecharaTest",
-    "path":"sprites/GamecharaTest/GamecharaTest.yy",
+    "name":"Gamecharacter_standart",
+    "path":"sprites/Gamecharacter_standart/Gamecharacter_standart.yy",
   },
   "spriteMaskId":null,
   "visible":true,
