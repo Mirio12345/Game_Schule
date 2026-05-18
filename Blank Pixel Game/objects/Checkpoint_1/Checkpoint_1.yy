@@ -7,12 +7,9 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Checkpoints",
-    "path":"folders/Checkpoints.yy",
+    "path":"folders/Objects/Checkpoints.yy",
   },
-  "parentObjectId":{
-    "name":"Wall_class",
-    "path":"objects/Wall_class/Wall_class.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

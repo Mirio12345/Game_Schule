@@ -1,7 +1,11 @@
 {
   "$GMObject":"",
   "%Name":"chest_1",
-  "eventList":[],
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
   "name":"chest_1",
   "overriddenProperties":[],
@@ -9,7 +13,10 @@
     "name":"RoomShit",
     "path":"folders/Objects/RoomShit.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"Wall_class",
+    "path":"objects/Wall_class/Wall_class.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -28,8 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Chest",
-    "path":"sprites/Chest/Chest.yy",
+    "name":"Chest1",
+    "path":"sprites/Chest1/Chest1.yy",
   },
   "spriteMaskId":null,
   "visible":true,

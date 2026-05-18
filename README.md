@@ -1,5 +1,6 @@
 
 
+
 Hallo, das ist eine Dokumentation für zweites Part für das Projekt.
 
 27.10.2025:
@@ -31,7 +32,6 @@ Amin hat die map dem Storyboard angepasst
 
 
 04.02.2026: Erster Konzept des Spielmaps von Gravenlord
-
 
 <img width="1121" height="785" alt="image" src="https://github.com/user-attachments/assets/5bab3ccd-26ef-4cc4-ae98-98bb65ee51fd" />
 
