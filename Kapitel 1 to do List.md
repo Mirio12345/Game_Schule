@@ -14,7 +14,8 @@
 
  Man finden heraus das man einen militair Ausenposten raiden muss
 
-# Systeme: 
+# Systeme:
+ - Save trough Game Close
  - Amin Gold coins die beim Töten direkt oben links in einen counter gehen
  - Invetar 
  - Andere Zigareten wie einige die dir Speedboost geben 
