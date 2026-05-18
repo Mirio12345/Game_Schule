@@ -1,31 +1,16 @@
 # Todo:
 
 ### (David)
-- Heal System ✔️
-- Besseres Checkpoint System ✔️
-- Vollstaendiges "Level"
-- Shader system fur crazy Visioals
-- Entity für roommanagement z.B. die Tür geht nur auf wenn alle Tod sind
-- (Gewisse Story einbindung)(Michi)
-- (Controller einbindung)
+-
 
 ### (Maxim)
-- Gamecharacter Sprites!!
-- room sprites overwork/neue
-- Chest Sprite Offen und zu ✔️
-- Random raum stuff wie schilde
-- (Menu Designen)
+- 
   
 ### (Amin)
-- Boss weiter machen
-- Boss raum ✔️
-- Level Layout
+- 
 
 ### (Michi)
-- Difficulty Anpassen 🆗
-- Maxim/Amin Helfen
-- Gamemaker Lanuage Lernen/Im Game etwas "Programieren"
-- Level Layout
+- 
 
 # Dokumentation: 
 
