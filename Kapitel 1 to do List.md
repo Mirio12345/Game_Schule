@@ -7,10 +7,10 @@
  Bazzar 
  - Händler
 
- Cut Scene wo irgenwas gestohlen wird
+ Cut Scene wo irgenwas gestohlen wird sowas in der Art 
 
  man muss in der Stadt eine Investigation machen um zu wissen was passiert ist
- - Mit Personenen Reden
+ - Mit Personenen Reden / Interagieren
 
  Man finden heraus das man einen militair Ausenposten raiden muss
 
@@ -23,3 +23,5 @@
  - Armor (Upgrades)
  - Wapons (Upgrades)
  - Kampf System (Exestiert schon)
+
+# ZIEL BIS ZUM ERSTEN HALBJAHR !!!!!!
