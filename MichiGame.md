@@ -1,4 +1,4 @@
-# 1.Kapitel im 1. Halbjahr ins Game bringen sowie 2. Kapitel im 2. Halbjahr
+1.Kapitel im 1. Halbjahr ins Game bringen sowie 2. Kapitel im 2. Halbjahr
 
 # Kapitel1:
 
