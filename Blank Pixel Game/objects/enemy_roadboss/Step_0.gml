@@ -33,10 +33,10 @@ image_index = count
 
 if global.bossCount > 0
 	{
-		global.bossCount = global.bossCount - 0.04;
+		global.bossCount = global.bossCount - 0.05;
 		if global.bossCount = 0
 		{
-			instance_create_depth(x+ 20,y + 20, 0 , enemy_boss_lary);
+			instance_create_depth(x+ 30,y + 30, 0 , enemy_boss_lary);
 			global.bossCount = 10;
 		}
 	}

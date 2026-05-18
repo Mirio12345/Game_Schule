@@ -17,7 +17,7 @@ global.enemySpeed = 2.8;
 global.enemyCooldown = 40;
 //enimy_roadboss
 global.enimy_roadbossDMG = 25;
-global.enimy_roadbossHP = 350;
+global.enimy_roadbossHP = 430;
 global.enimy_roadbossSpeed = 1;
 global.enimy_roadbossCooldown = 10;
 //enemy_boss_lary
