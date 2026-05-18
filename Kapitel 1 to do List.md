@@ -1,4 +1,4 @@
-# 1.Kapitel im 1. Halbjahr ins Game bringen sowie 2. Kapitel im 2. Halbjahr
+1.Kapitel im 1. Halbjahr ins Game bringen sowie 2. Kapitel im 2. Halbjahr
 
 # Kapitel1:
 
@@ -7,14 +7,15 @@
  Bazzar 
  - Händler
 
- Cut Scene wo irgenwas gestohlen wird
+ Cut Scene wo irgenwas gestohlen wird sowas in der Art 
 
  man muss in der Stadt eine Investigation machen um zu wissen was passiert ist
- - Mit Personenen Reden
+ - Mit Personenen Reden / Interagieren
 
  Man finden heraus das man einen militair Ausenposten raiden muss
 
-# Systeme: 
+# Systeme:
+ - Save trough Game Close
  - Amin Gold coins die beim Töten direkt oben links in einen counter gehen
  - Invetar 
  - Andere Zigareten wie einige die dir Speedboost geben 
@@ -23,3 +24,5 @@
  - Armor (Upgrades)
  - Wapons (Upgrades)
  - Kampf System (Exestiert schon)
+
+# ZIEL BIS ZUM ERSTEN HALBJAHR !!!!!!
