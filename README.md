@@ -1,49 +1,49 @@
 
 
 
-Hallo, das ist eine Dokumentation für zweites Part für das Projekt.
+# Hallo, das ist eine Dokumentation für zweites Part für das Projekt.
 
-27.10.2025:
-Dokumentation für amin (wurde das Entwurf von das Spiel mit ersten Teil zusammenkombiniert)
+## 27.10.2025:
+### Dokumentation für amin (wurde das Entwurf von das Spiel mit ersten Teil zusammenkombiniert)
 
 29.10.2025<img width="256" height="256" alt="Worldmap" src="https://github.com/user-attachments/assets/ad8c61d4-b984-429a-bba1-023f717bdde9" />
 
-Dokumentation von Amin: der Sprite Swinjya wurde hinzugefügt
+### Dokumentation von Amin: der Sprite Swinjya wurde hinzugefügt
 
 <img width="590" height="590" alt="image" src="https://github.com/user-attachments/assets/1f8127a8-448b-486a-9f62-bfc4f9ce3323" />
 
-3.11.2025
-Amin hat die map dem Storyboard angepasst
+## 3.11.2025
+ Amin hat die map dem Storyboard angepasst
 
 <img width="256" height="256" alt="Worldmap" src="https://github.com/user-attachments/assets/d70a92ee-6a68-4b29-9ee9-6de190dc4c37" />
 
- 24.11.2025: Update des Worldmaps des Spieles
+## 24.11.2025: Update des Worldmaps des Spieles
  
 <img width="256" height="256" alt="Worldmap" src="https://github.com/user-attachments/assets/7a4426fd-ed12-4291-88d7-6e185e8c69a0" /> 
 
-24.11.2025: Update des Worldmap für das Spiel mit + 1 Stadt
+## 24.11.2025: Update des Worldmap für das Spiel mit + 1 Stadt
 
 
 <img width="1024" height="720" alt="links ausgang1" src="https://github.com/user-attachments/assets/f3304140-9859-44cc-bb18-9afde011e5c8" />
 
-01.12.2025: Update des Maps mit +1 Room
+## 01.12.2025: Update des Maps mit +1 Room
 
 <img width="3000" height="3000" alt="Gravenlord-export" src="https://github.com/user-attachments/assets/44204dbd-8f0f-418d-b206-1d4f800dc018" />
 
 
-04.02.2026: Erster Konzept des Spielmaps von Gravenlord
+## 04.02.2026: Erster Konzept des Spielmaps von Gravenlord
 
 <img width="1121" height="785" alt="image" src="https://github.com/user-attachments/assets/5bab3ccd-26ef-4cc4-ae98-98bb65ee51fd" />
 
 
-23.02.2026: Weiterarbeit bei der Konzept des Spielmaps von Gravenlord. Der gewünschte Bazar wurde hinzugefügt
+## 23.02.2026: Weiterarbeit bei der Konzept des Spielmaps von Gravenlord. Der gewünschte Bazar wurde hinzugefügt
 
 
 
 <img width="770" height="445" alt="image" src="https://github.com/user-attachments/assets/0cd49c4c-b74b-40ed-9fb2-ecfbe70a61d0" />
 
 
-04.03.2026: Wurde eine Skizze zu ersten Level ins Spielprojekt hinzugefügt und Bewegungskript mit zooming funktioniert
+## 04.03.2026: Wurde eine Skizze zu ersten Level ins Spielprojekt hinzugefügt und Bewegungskript mit zooming funktioniert
 
 <img width="341" height="246" alt="image" src="https://github.com/user-attachments/assets/a7fa5c7e-797e-41a8-b401-5a420ddf29de" />
 
@@ -59,7 +59,7 @@ StartScreen
 
 Bewegungsskript
 
-Stand: 11.05.2026
+## Stand: 11.05.2026
 
 <img width="784" height="436" alt="image" src="https://github.com/user-attachments/assets/f8889da2-eba7-4040-aef3-856433806980" />
 
@@ -92,7 +92,7 @@ der Heilungsmitel (Zigaretten) wurde hinzugefügt
 insgesamt 3 Levels vorhanden (inklusive Bossraum)
 
 
-Stand: 13.05.2026
+## Stand: 13.05.2026
 
 
 <img width="234" height="93" alt="image" src="https://github.com/user-attachments/assets/b84ad7ba-576d-4565-a1b5-a8f33bd1f55c" />
