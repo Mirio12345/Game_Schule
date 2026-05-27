@@ -15,6 +15,7 @@
 # ToDo All:
 1.Kapitel im 1. Halbjahr ins Game bringen sowie 2. Kapitel im 2. Halbjahr
 
+##Wichtig! Alle 2 Wochen eine Deadline für Aufgaben
 ## Kapitel1:
 
  Cut Scene Maybe wo der main vom coma aufwacht 
