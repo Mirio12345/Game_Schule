@@ -25,7 +25,7 @@ catch(_error)
 	global.enemyCooldown = 45;
 	//enemy boss
 	global.enimy_roadbossDMG = 18;
-	global.enimy_roadbossHP = 300;
+	global.enimy_roadbossHP = 360;
 	global.enimy_roadbossSpeed = 1;
 	global.enimy_roadbossCooldown = 20;
 	//enemy_boss_lary
