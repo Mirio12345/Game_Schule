@@ -44,7 +44,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.1400.5.1055",
+    "IDEVersion":"2026.0.0.16",
   },
   "name":"Blank Pixel Game",
   "resources":[
@@ -66,6 +66,7 @@
     {"id":{"name":"Checkpoint_4_Battle1","path":"objects/Checkpoint_4_Battle1/Checkpoint_4_Battle1.yy",},},
     {"id":{"name":"Checkpoint_5_Battle2","path":"objects/Checkpoint_5_Battle2/Checkpoint_5_Battle2.yy",},},
     {"id":{"name":"chest_1","path":"objects/chest_1/chest_1.yy",},},
+    {"id":{"name":"DifficulityText","path":"objects/DifficulityText/DifficulityText.yy",},},
     {"id":{"name":"enemy_boss_lary","path":"objects/enemy_boss_lary/enemy_boss_lary.yy",},},
     {"id":{"name":"enemy_lary","path":"objects/enemy_lary/enemy_lary.yy",},},
     {"id":{"name":"enemy_roadboss","path":"objects/enemy_roadboss/enemy_roadboss.yy",},},
