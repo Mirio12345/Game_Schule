@@ -6,6 +6,8 @@ hearing_range = 500;   // Ab wann er dich hört (und auf dich zugeht)
 move_speed = global.enemy_boss_lary_Speed;
 shoot_cooldown = global.enemy_boss_lary_Cooldown;   // Wie lange er zwischen Schüssen wartet (60 Frames = ca. 1 Sekunde)
 can_shoot = true;
+bullet_speed = 8;
+shoot_move_speed = 0;   // Geschwindigkeit während des Schießens
 
 hp  = global.enemy_boss_lary_HP;
 // Aktueller Zustand

@@ -6,6 +6,7 @@
   "inheritCreationOrder":false,
   "inheritLayers":false,
   "instanceCreationOrder":[
+    {"name":"inst_4C73CDAA","path":"rooms/Startroom_battle/Startroom_battle.yy",},
     {"name":"inst_1D5B7282","path":"rooms/Startroom_battle/Startroom_battle.yy",},
     {"name":"inst_7D3492AC","path":"rooms/Startroom_battle/Startroom_battle.yy",},
     {"name":"inst_57E08157","path":"rooms/Startroom_battle/Startroom_battle.yy",},
@@ -22,6 +23,7 @@
   "isDnd":false,
   "layers":[
     {"$GMRInstanceLayer":"","%Name":"Instances_1","depth":0,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
+        {"$GMRInstance":"v4","%Name":"inst_4C73CDAA","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_4C73CDAA","objectId":{"name":"Armor_kit","path":"objects/Armor_kit/Armor_kit.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":475.0,"y":150.0,},
         {"$GMRInstance":"v4","%Name":"inst_7D3492AC","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_7D3492AC","objectId":{"name":"new_Gamecharacter_1","path":"objects/new_Gamecharacter_1/new_Gamecharacter_1.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":0.36328125,"scaleY":0.375,"x":401.22656,"y":117.0,},
         {"$GMRInstance":"v4","%Name":"inst_29D68687","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_29D68687","objectId":{"name":"Hp_bar","path":"objects/Hp_bar/Hp_bar.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":51.0,"y":-162.0,},
         {"$GMRInstance":"v4","%Name":"inst_4DD014F0","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_4DD014F0","objectId":{"name":"obj_camera","path":"objects/obj_camera/obj_camera.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":170.0,"y":-109.0,},

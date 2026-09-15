@@ -1,0 +1,11 @@
+Änderungen:
+- Cutscenes pausieren Spieler + Gegner-KI ca. 3 Sekunden und zeigen Dialogbox; SPACE überspringt.
+- Armor-Kit Design verbessert und in alle 6 Gameplay-Räume platziert.
+- Perk Z: Armor auf 50% reset, 5s Cooldown.
+- Perk N: 5s lang Piercing + One-Shot für alle Spielerkugeln, 5s Reset.
+- Kamera-Zoom wegen Z-Konflikt auf Q (rein) / X (raus) geändert.
+- Armor-Kit-Shop im Settingsscreen: +1/3, +1/2, +1/1 Max-Armor.
+- Sprint: 10s Cooldown nach vollständigem Leeren der Ausdauer.
+- Heal-Cooldown: exakt 5 Sekunden abhängig von game FPS.
+- Healitem-Step bereinigt (draw_self war fälschlich im Step-Event).
+- Boss-Minions zerstören normale Player-Bullets nun korrekt; Perk-Bullets durchdringen.

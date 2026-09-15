@@ -1,0 +1,1 @@
+life=10; amount=4; crit=false; vx=random_range(-1.5,1.5); vy=random_range(-1.5,1.5);

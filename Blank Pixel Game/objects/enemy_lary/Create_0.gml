@@ -6,6 +6,8 @@ hearing_range = 500;   // Ab wann er dich hört (und auf dich zugeht)
 move_speed = global.enemySpeed;
 shoot_cooldown = global.enemyCooldown;   // Wie lange er zwischen Schüssen wartet (60 Frames = ca. 1 Sekunde)
 can_shoot = true;
+bullet_speed = global.bulletSpeed;
+shoot_move_speed = 0;   // Geschwindigkeit während des Schießens
 
 hp  = global.enemyHP;
 // Aktueller Zustand

@@ -1,0 +1,11 @@
+Resource-load repair
+
+Fixed:
+- New GameMaker object resources now include physicsStartAwake, matching the existing project resource schema.
+- Corrected %%Name typo in the two new script .yy resources.
+- Removed accidental literal \n sequences from the player Draw GUI event.
+- Prevented duplicate enemy-side bullet damage; player bullet collision now owns the centralized damage pipeline.
+- Paused projectiles during room-entry dialogue so the gameplay actually stops.
+- Added the missing Step event resource for enemy bullets.
+- Verified all project .yy/.yyp resources with a trailing-comma-tolerant JSON parser.
+- Verified all object/sprite/resource references resolve to existing files.

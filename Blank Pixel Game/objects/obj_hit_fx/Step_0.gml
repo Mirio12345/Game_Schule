@@ -1,0 +1,1 @@
+life--; x+=vx; y+=vy; if (life<=0) instance_destroy();

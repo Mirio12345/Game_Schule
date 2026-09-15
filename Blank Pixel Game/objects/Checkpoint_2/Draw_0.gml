@@ -1,0 +1,1 @@
+var glow=6+sin(current_time/180)*3; draw_set_alpha(active?0.9:0.45); draw_set_color(active?c_aqua:c_dkgray); draw_circle(x,y,glow,true); draw_set_alpha(1); draw_sprite(sprite_index,image_index,x,y); draw_set_color(c_white);

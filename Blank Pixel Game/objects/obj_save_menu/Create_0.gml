@@ -1,0 +1,1 @@
+visible_menu=false; selected_slot=1; message=""; message_timer=0;

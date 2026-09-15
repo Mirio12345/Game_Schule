@@ -1,0 +1,1 @@
+range_left -= speed; if (range_left<=0) instance_destroy();

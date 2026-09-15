@@ -2,61 +2,45 @@ event_inherited();
 
 global.player_hp = global.max_player_hp;
 global.HealitemCount = global.MaxHealitemCount;
+global.player_armor = 0; // Rüstung geht beim Tod verloren, muss neu gefunden werden
 
-if global.latest_checkpoint == 0
-{
-	
-}
-if global.latest_checkpoint == 1
-{
-	//									!SCRAPED!
-	global.Pos_x = 550
-	global.Pos_y = 360
-	room_goto(TestRoom)
-}
-if global.latest_checkpoint == 2
-{
-	//									!SCRAPED!
-	global.Pos_x = 700
-	global.Pos_y = 340
-	room_goto(lausgang)
-}
-if global.latest_checkpoint == 3
-{
-	global.Pos_x = 333
-	global.Pos_y = 237
-	global.curent_room = Startroom_battle
-	room_goto(Startroom_battle)
-}
-if global.latest_checkpoint == 4
-{
-	global.Pos_x = 773;
-	global.Pos_y = 678;
-	global.curent_room = Battle1
-	room_goto(Battle1);
-}
-if global.latest_checkpoint == 5
-{
-	global.Pos_x = 1121;
-	global.Pos_y = 644;
-	global.curent_room = Battle2
-	room_goto(Battle2);
-}
+// Checkpoint -> Position/Ziel-Room als switch statt sechs unabhängiger ifs,
+// die sich ohnehin gegenseitig ausschließen (nur der passende Fall wird
+// jetzt geprüft, statt immer alle sechs). Der leere "checkpoint == 0"-Block
+// und der auskommentierte, ungenutzte difficulty-Codeblock wurden entfernt.
+switch (global.latest_checkpoint) {
+	case 1:
+		// !SCRAPED!
+		global.Pos_x = 550;
+		global.Pos_y = 360;
+		room_goto(TestRoom);
+		break;
 
-//Found easyer method for:
-//if global.difficulity = 0
-//{
-//	global.player_hp = 120;
-//}
-//if global.difficulity = 1
-//{
-//	global.player_hp = 100;
-//}
-//if global.difficulity = 2
-//{
-//	global.player_hp = 80;
-//}
-//if global.difficulity = 3
-//{
-//	global.player_hp = 60;
-//}
+	case 2:
+		// !SCRAPED!
+		global.Pos_x = 700;
+		global.Pos_y = 340;
+		room_goto(lausgang);
+		break;
+
+	case 3:
+		global.Pos_x = 333;
+		global.Pos_y = 237;
+		global.curent_room = Startroom_battle;
+		room_goto(Startroom_battle);
+		break;
+
+	case 4:
+		global.Pos_x = 773;
+		global.Pos_y = 678;
+		global.curent_room = Battle1;
+		room_goto(Battle1);
+		break;
+
+	case 5:
+		global.Pos_x = 1121;
+		global.Pos_y = 644;
+		global.curent_room = Battle2;
+		room_goto(Battle2);
+		break;
+}

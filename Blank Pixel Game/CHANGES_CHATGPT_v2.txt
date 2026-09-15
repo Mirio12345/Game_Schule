@@ -1,0 +1,9 @@
+PROJECT REVIEW + IMPLEMENTATION
+
+Analyzed: 691 project files/resources, existing player/enemy/room/checkpoint/armor/heal/camera/settings systems.
+
+Added: modular weapon definitions/inventory, pistol/shotgun/SMG/melee, reload/switching, projectile metadata, central damage pipeline with resistances/crit/knockback/i-frames, hit FX, enemy resistance profiles, checkpoint activation/animation/autosave, 3-slot JSON save/load/delete UI, autosave hooks, weapon pickups, and armor kits across playable rooms.
+
+Controls: LMB fire, 1-4 switch, F reload, E heal, Shift sprint, Z armor perk, N piercing one-shot perk, F6 save menu in Settings.
+
+Important: this archive was statically validated. A GameMaker IDE/runtime is not available in this environment, so a full IDE compile/run test could not be performed.

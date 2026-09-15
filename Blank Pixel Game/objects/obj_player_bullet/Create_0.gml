@@ -1,3 +1,3 @@
-// Destroy bullet automatically after 5 seconds to save memory
-// (60 frames * 5 seconds = 300)
-alarm[0] = 300;
+// Projektil-Lebenszeit und Perk-Flag
+alarm[0] = game_get_speed(gamespeed_fps) * 5;
+perk_piercing_oneshot = false;

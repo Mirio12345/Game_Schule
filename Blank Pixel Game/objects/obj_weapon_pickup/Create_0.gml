@@ -1,0 +1,1 @@
+pulse=random(100); label=string_upper(weapon_id);

@@ -1,0 +1,1 @@
+checkpoint_id=3; active=false; anim=0;

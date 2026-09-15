@@ -6,6 +6,7 @@
   "inheritCreationOrder":false,
   "inheritLayers":false,
   "instanceCreationOrder":[
+    {"name":"inst_CC2AC358","path":"rooms/Battle2/Battle2.yy",},
     {"name":"inst_7A2DF2D7_2","path":"rooms/Battle2/Battle2.yy",},
     {"name":"inst_30ECA1C1_2","path":"rooms/Battle2/Battle2.yy",},
     {"name":"inst_5022BAA4_2","path":"rooms/Battle2/Battle2.yy",},
@@ -33,6 +34,7 @@
   "isDnd":false,
   "layers":[
     {"$GMRInstanceLayer":"","%Name":"Instances_2","depth":0,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
+        {"$GMRInstance":"v4","%Name":"inst_CC2AC358","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_CC2AC358","objectId":{"name":"Armor_kit","path":"objects/Armor_kit/Armor_kit.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1150.0,"y":650.0,},
         {"$GMRInstance":"v4","%Name":"inst_30ECA1C1_2","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_30ECA1C1_2","objectId":{"name":"new_Gamecharacter_1","path":"objects/new_Gamecharacter_1/new_Gamecharacter_1.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":0.25,"scaleY":0.25,"x":1238.0,"y":682.0,},
         {"$GMRInstance":"v4","%Name":"inst_5022BAA4_2","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_5022BAA4_2","objectId":{"name":"Hp_bar","path":"objects/Hp_bar/Hp_bar.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":33.0,"y":-176.0,},
         {"$GMRInstance":"v4","%Name":"inst_7A7E30E1_2","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_7A7E30E1_2","objectId":{"name":"Room_persistens","path":"objects/Room_persistens/Room_persistens.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":384.0,"y":-128.0,},

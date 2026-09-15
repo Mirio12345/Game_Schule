@@ -6,6 +6,8 @@ hearing_range = 900;   // Ab wann er dich hört (und auf dich zugeht)
 move_speed = global.enimy_roadbossSpeed;
 shoot_cooldown = global.enimy_roadbossCooldown;   // Wie lange er zwischen Schüssen wartet (60 Frames = ca. 1 Sekunde)
 can_shoot = true;
+bullet_speed = 10;
+shoot_move_speed = 2;   // Roadboss bewegt sich beim Schießen weiter (bewusst anders als die anderen Gegner)
 
 hp  = global.enimy_roadbossHP;
 // Aktueller Zustand
@@ -21,9 +23,9 @@ walk_sprites = [roboter_nach_rechts_laufen, roboter_nach_norden_laufen, roboter_
 // idle_sprites = [spr_enemy_idle_right, spr_enemy_idle_up, spr_enemy_idle_left, spr_enemy_idle_down];
 face = 3;
 
-try{
-	count = global.bossCount
-}
-catch(_error){
-	global.bossCount = 10
+// Nur beim allerersten Roadboss im Spiel initialisieren, danach läuft
+// global.bossCount einfach weiter (kein try/catch nötig für einen simplen
+// "existiert die Variable schon?"-Check).
+if (!variable_global_exists("bossCount")) {
+	global.bossCount = 10;
 }
