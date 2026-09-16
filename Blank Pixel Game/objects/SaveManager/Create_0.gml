@@ -16,4 +16,18 @@ if (!variable_global_exists("door_states")) {
 	global.door_states = {};
 }
 
+// Gold coin system
+if (!variable_global_exists("gold_coins")) {
+	global.gold_coins = 0;
+}
+if (!variable_global_exists("enemy_lary_coins")) {
+	global.enemy_lary_coins = 10;
+}
+if (!variable_global_exists("enemy_boss_lary_coins")) {
+	global.enemy_boss_lary_coins = 50;
+}
+if (!variable_global_exists("enemy_roadboss_coins")) {
+	global.enemy_roadboss_coins = 100;
+}
+
 show_debug_message("SaveManager initialized");

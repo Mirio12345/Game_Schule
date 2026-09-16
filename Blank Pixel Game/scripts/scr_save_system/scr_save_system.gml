@@ -51,6 +51,9 @@ function scr_save_game(slot) {
 		door_states:           global.door_states,
 		// Intro cutscene
 		intro_played:          global.intro_played,
+		
+		// Gold coins
+		gold_coins:            global.gold_coins,
 	};
 	
 	var _json = json_stringify(_data);
@@ -140,6 +143,11 @@ function scr_load_game(slot) {
 		global.intro_played = _data.intro_played;
 	} else {
 		global.intro_played = true; // old save = intro was already seen
+	}
+	
+	// Restore gold coins
+	if (variable_struct_exists(_data, "gold_coins")) {
+		global.gold_coins = _data.gold_coins;
 	}
 	
 	// Set active slot
