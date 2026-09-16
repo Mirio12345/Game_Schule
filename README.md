@@ -40,6 +40,7 @@
  - Armor (Upgrades)
  - Wapons (Upgrades)
  - Kampf System (Exestiert schon)
+ - Map Mit Fast travel wenn checkpoint aktiviert wurde
 
 ## ZIEL BIS ZUM ERSTEN HALBJAHR !!!!!!
 # Dokumentation 2.Jahr
