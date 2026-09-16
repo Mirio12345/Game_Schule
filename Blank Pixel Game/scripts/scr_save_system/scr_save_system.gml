@@ -49,6 +49,9 @@ function scr_save_game(slot) {
 		// Chest & door states
 		chest_states:          global.chest_states,
 		door_states:           global.door_states,
+		
+		// Gold coins
+		gold_coins:            global.gold_coins,
 	};
 	
 	var _json = json_stringify(_data);
@@ -132,6 +135,11 @@ function scr_load_game(slot) {
 	}
 	if (variable_struct_exists(_data, "door_states")) {
 		global.door_states = _data.door_states;
+	}
+	
+	// Restore gold coins
+	if (variable_struct_exists(_data, "gold_coins")) {
+		global.gold_coins = _data.gold_coins;
 	}
 	
 	// Set active slot
