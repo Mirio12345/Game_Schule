@@ -115,6 +115,9 @@ if keyboard_check(ord("R"))
 		}
 		global.HealitemCount = global.MaxHealitemCount;
 		global.player_hp = global.max_player_hp;
+		global.curent_room = room;
+		// Auto-save at checkpoint
+		if (global.active_slot > 0) { scr_save_game(global.active_slot); }
 		room_persistent = false;
 		room_restart();
 	}
@@ -127,6 +130,9 @@ if keyboard_check(ord("R"))
 		}
 		global.HealitemCount = global.MaxHealitemCount;
 		global.player_hp = global.max_player_hp;
+		global.curent_room = room;
+		// Auto-save at checkpoint
+		if (global.active_slot > 0) { scr_save_game(global.active_slot); }
 		room_persistent = false;
 		room_restart();
 	}
@@ -139,6 +145,9 @@ if keyboard_check(ord("R"))
 		}
 		global.HealitemCount = global.MaxHealitemCount;
 		global.player_hp = global.max_player_hp;
+		global.curent_room = room;
+		// Auto-save at checkpoint
+		if (global.active_slot > 0) { scr_save_game(global.active_slot); }
 		room_persistent = false;
 		room_restart();
 	}

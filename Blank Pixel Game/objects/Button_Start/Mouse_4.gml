@@ -36,6 +36,13 @@ catch(_error)
 
 	global.bulletSpeed = 10;
 	global.curent_room = Startroom_battle;
+	
+	// Reset save state for new game
+	global.active_slot = 0;
+	if (!variable_global_exists("chest_states")) { global.chest_states = {}; }
+	if (!variable_global_exists("door_states")) { global.door_states = {}; }
+	global.chest_states = {};
+	global.door_states = {};
 
 	room_goto(global.curent_room);
 }

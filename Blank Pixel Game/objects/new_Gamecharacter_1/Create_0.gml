@@ -8,6 +8,12 @@ can_reflect = true;
 
 walk_sprites = [Gamecharacter_nach_rechts_laufen,Gamecharacter_nach_norden_laufen,Gamecharacter_nach_links_laufen,Gamecharacter_nach_sueden_laufen];
 face = 3;
+
+// Ensure save tracking globals exist (in case SaveManager hasn't run yet)
+if (!variable_global_exists("chest_states")) { global.chest_states = {}; }
+if (!variable_global_exists("door_states")) { global.door_states = {}; }
+if (!variable_global_exists("active_slot")) { global.active_slot = 0; }
+
 try 
 {
 	hp = global.player_hp;
