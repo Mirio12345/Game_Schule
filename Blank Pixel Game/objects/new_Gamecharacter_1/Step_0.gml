@@ -1,6 +1,20 @@
 globalvar Pos_x;
 globalvar Pos_y;
 hp = global.player_hp;
+
+// --- Death check (always runs, even during cutscenes) ---
+if hp <= 0
+{
+	room_persistent = false;
+	room_goto(Death_screen);
+}
+
+// --- Movement & Input: only when global.can_move is true ---
+if (variable_global_exists("can_move") && global.can_move == false) {
+	// During cutscenes: keep idle sprite, skip all input
+	sprite_index = Gamecharacter_standart;
+} else {
+
 var _right = keyboard_check(ord("D"));
 var _down = keyboard_check(ord("S"));
 var _left = keyboard_check(ord("A"));
@@ -12,12 +26,6 @@ var yinput = _down	- _up;
 
 move_and_collide(xinput * my_speed, yinput * my_speed, [Wall,Halfwall,Wall_class])
 
-
-if hp <= 0
-{
-	room_persistent = false;
-	room_goto(Death_screen);
-}
 
 if xinput < 0
 {
@@ -152,4 +160,6 @@ if keyboard_check(ord("R"))
 		room_restart();
 	}
 }
+
+} // end can_move check
 

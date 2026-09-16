@@ -49,6 +49,8 @@ function scr_save_game(slot) {
 		// Chest & door states
 		chest_states:          global.chest_states,
 		door_states:           global.door_states,
+		// Intro cutscene
+		intro_played:          global.intro_played,
 	};
 	
 	var _json = json_stringify(_data);
@@ -132,6 +134,12 @@ function scr_load_game(slot) {
 	}
 	if (variable_struct_exists(_data, "door_states")) {
 		global.door_states = _data.door_states;
+	}
+	// Restore intro cutscene flag (backward-compatible with old saves)
+	if (variable_struct_exists(_data, "intro_played")) {
+		global.intro_played = _data.intro_played;
+	} else {
+		global.intro_played = true; // old save = intro was already seen
 	}
 	
 	// Set active slot

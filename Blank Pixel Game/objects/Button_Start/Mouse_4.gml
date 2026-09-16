@@ -43,6 +43,8 @@ catch(_error)
 	if (!variable_global_exists("door_states")) { global.door_states = {}; }
 	global.chest_states = {};
 	global.door_states = {};
+	// Intro cutscene flag – play once on new game
+	global.intro_played = false;
 
 	room_goto(global.curent_room);
 }
