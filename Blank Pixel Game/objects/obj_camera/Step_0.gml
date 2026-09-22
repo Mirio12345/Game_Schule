@@ -1,10 +1,15 @@
-if (!variable_global_exists("zoom_level_character")) {
-	global.zoom_level_character = 1.2;
+try 
+{
+	zoom_level = global.zoom_level_character
 }
-zoom_level = global.zoom_level_character;
+catch(_error)
+{
+	global.zoom_level_character = 1.2
+	zoom_level = global.zoom_level_character
+}
 
-// Z ist für den Armor-Perk reserviert. Kamera-Zoom: Q rein, X raus
-if (keyboard_check(ord("Q"))) {
+// Zoom in with 'Z', Zoom out with 'X'
+if (keyboard_check(ord("Z"))) {
     zoom_level -= 0.02;
 }
 if (keyboard_check(ord("X"))) {
@@ -13,12 +18,6 @@ if (keyboard_check(ord("X"))) {
 
 // Clamp zoom so it doesn't flip or get too huge
 zoom_level = clamp(zoom_level, 0.3, 2.0);
-
-// Bugfix: ohne diese Zeile wurde zoom_level jeden Frame wieder auf den
-// zuletzt gewählten Preset (global.zoom_level_character) zurückgesetzt,
-// bevor die Z/X-Änderung gespeichert wurde - Z/X hatten dadurch praktisch
-// keinen sichtbaren Dauereffekt.
-global.zoom_level_character = zoom_level;
 
 // Apply the new size to the camera
 var new_w = default_zoom_width * zoom_level;

@@ -1,9 +1,19 @@
-draw_self()
-frame = global.player_hp
-max_player_hp = global.max_player_hp
-var hp_percent = frame / max_player_hp;
+/// HP Bar - Step Event
 
-hp_percent = clamp(hp_percent, 0, 1);
+// Smoothly interpolate the display bar to actual HP
+var _target = global.player_hp / max(global.max_player_hp, 1);
+display_hp = lerp(display_hp, _target, 0.08);
 
+// Damage trail follows slower behind
+trail_hp = lerp(trail_hp, _target, trail_speed);
 
-image_index = hp_percent * (image_number - 1);
+// Update max in case it changes
+display_max_hp = global.max_player_hp;
+
+// Glow pulse when damaged
+if (_target < display_hp - 0.01) {
+    glow_alpha = lerp(glow_alpha, 1, 0.15);
+} else {
+    glow_alpha = lerp(glow_alpha, 0, 0.04);
+}
+glow_pulse += 0.05;

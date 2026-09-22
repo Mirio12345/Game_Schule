@@ -1,2 +1,5 @@
-count = global.HealitemCount;
-image_index = clamp(count, 0, image_number - 1);
+draw_self()
+
+count = global.HealitemCount
+
+image_index = count

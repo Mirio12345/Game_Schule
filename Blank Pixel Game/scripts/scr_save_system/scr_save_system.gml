@@ -1,72 +1,302 @@
-function save_system_init() {
-    if (!variable_global_exists("save_system_ready")) {
-        global.save_system_ready=true;
-        global.save_prefix="save_slot_";
-        global.autosave_timer=0;
-        global.playtime_seconds=0;
-        global.story_flags={};
-        global.checkpoint_flags={"1":false,"2":false,"3":false,"4":false,"5":false};
-        global.boss_flags={};
-    }
+/// @function scr_save_game(slot)
+/// @description Saves the current game state to a JSON file
+/// @param {real} slot The save slot number (1, 2, or 3)
+/// @returns {bool} true on success, false on failure
+function scr_save_game(slot) {
+	if (slot < 1 || slot > 3) return false;
+	
+	var _data = {
+		// Player state
+		player_hp:             global.player_hp,
+		max_player_hp:         global.max_player_hp,
+		Pos_x:                 global.Pos_x,
+		Pos_y:                 global.Pos_y,
+		latest_checkpoint:     global.latest_checkpoint,
+		curent_room:           global.curent_room,
+		
+		// Player stats
+		playerDMG:             global.playerDMG,
+		playerSpeed:           global.playerSpeed,
+		playerShootCooldown:   global.playerShootCooldown,
+		playerReflectCooldown: global.playerReflectCooldown,
+		HealValue:             global.HealValue,
+		HealMultiplier:        global.HealMultiplier,
+		HealitemCount:         global.HealitemCount,
+		MaxHealitemCount:      global.MaxHealitemCount,
+		HealCooldown:          global.HealCooldown,
+		
+		// Difficulty
+		difficulity:           global.difficulity,
+		
+		// Enemy stats
+		enemyDMG:              global.enemyDMG,
+		enemyHP:               global.enemyHP,
+		enemySpeed:            global.enemySpeed,
+		enemyCooldown:         global.enemyCooldown,
+		enimy_roadbossDMG:     global.enimy_roadbossDMG,
+		enimy_roadbossHP:      global.enimy_roadbossHP,
+		enimy_roadbossSpeed:   global.enimy_roadbossSpeed,
+		enimy_roadbossCooldown: global.enimy_roadbossCooldown,
+		enemy_boss_lary_DMG:    global.enemy_boss_lary_DMG,
+		enemy_boss_lary_HP:     global.enemy_boss_lary_HP,
+		enemy_boss_lary_Speed:  global.enemy_boss_lary_Speed,
+		enemy_boss_lary_Cooldown: global.enemy_boss_lary_Cooldown,
+		bulletSpeed:           global.bulletSpeed,
+		
+		// Camera
+		zoom_level_character:  global.zoom_level_character,
+		
+		// Chest & door states
+		chest_states:          global.chest_states,
+		door_states:           global.door_states,
+		// Intro cutscene
+		intro_played:          global.intro_played,
+		
+		// Gold coins
+		gold_coins:            global.gold_coins,
+		
+		// Armor
+		armor_level:           global.armor_level,
+		owned_armors:          global.owned_armors,
+		current_armor:         global.current_armor,
+
+		// Weapons
+		owned_weapons:         global.owned_weapons,
+		current_weapon:        global.current_weapon,
+
+		// Items (cigarettes)
+		item_counts:           global.item_counts,
+		speed_boost_timer:     global.speed_boost_timer,
+
+		// Exponential pricing
+		total_purchases:       global.total_purchases,
+	};
+	
+	var _json = json_stringify(_data);
+	var _filename = game_save_id + "save_slot_" + string(slot) + ".json";
+	var _file = file_text_open_write(_filename);
+	if (_file == -1) return false;
+	
+	file_text_write_string(_file, _json);
+	file_text_close(_file);
+	
+	show_debug_message("Game saved to slot " + string(slot));
+	return true;
 }
-function save_path(_slot) { return working_directory + "save_slot_" + string(_slot) + ".json"; }
-function save_payload() {
-    save_system_init(); weapon_system_init();
-    var data={version:2, room:room, room_name:room_get_name(room), x:global.Pos_x, y:global.Pos_y,
-        checkpoint:global.latest_checkpoint, hp:global.player_hp, max_hp:global.max_player_hp,
-        armor:global.player_armor, max_armor:global.max_player_armor, difficulty:global.difficulity,
-        heal_count:global.HealitemCount, max_heal:global.MaxHealitemCount, current_weapon:global.current_weapon_slot,
-        weapon_inventory:global.weapon_inventory, checkpoint_flags:global.checkpoint_flags,
-        story_flags:global.story_flags, boss_flags:global.boss_flags, playtime:global.playtime_seconds};
-    return data;
+
+/// @function scr_load_game(slot)
+/// @description Loads game state from a JSON file
+/// @param {real} slot The save slot number (1, 2, or 3)
+/// @returns {bool} true on success, false on failure
+function scr_load_game(slot) {
+	if (slot < 1 || slot > 3) return false;
+	
+	var _filename = game_save_id + "save_slot_" + string(slot) + ".json";
+	if (!file_exists(_filename)) return false;
+	
+	var _file = file_text_open_read(_filename);
+	if (_file == -1) return false;
+	
+	var _json = "";
+	while (!file_text_eof(_file)) {
+		_json += file_text_read_string(_file);
+		file_text_readln(_file);
+	}
+	file_text_close(_file);
+	
+	var _data = json_parse(_json);
+	if (!is_struct(_data)) return false;
+	
+	// Restore player state
+	global.player_hp             = _data.player_hp;
+	global.max_player_hp         = _data.max_player_hp;
+	global.Pos_x                 = _data.Pos_x;
+	global.Pos_y                 = _data.Pos_y;
+	global.latest_checkpoint     = _data.latest_checkpoint;
+	global.curent_room           = _data.curent_room;
+	
+	// Restore player stats
+	global.playerDMG             = _data.playerDMG;
+	global.playerSpeed           = _data.playerSpeed;
+	global.playerShootCooldown   = _data.playerShootCooldown;
+	global.playerReflectCooldown = _data.playerReflectCooldown;
+	global.HealValue             = _data.HealValue;
+	global.HealMultiplier        = _data.HealMultiplier;
+	global.HealitemCount         = _data.HealitemCount;
+	global.MaxHealitemCount      = _data.MaxHealitemCount;
+	global.HealCooldown          = _data.HealCooldown;
+	
+	// Restore difficulty
+	global.difficulity           = _data.difficulity;
+	
+	// Restore enemy stats
+	global.enemyDMG              = _data.enemyDMG;
+	global.enemyHP               = _data.enemyHP;
+	global.enemySpeed            = _data.enemySpeed;
+	global.enemyCooldown         = _data.enemyCooldown;
+	global.enimy_roadbossDMG     = _data.enimy_roadbossDMG;
+	global.enimy_roadbossHP      = _data.enimy_roadbossHP;
+	global.enimy_roadbossSpeed   = _data.enimy_roadbossSpeed;
+	global.enimy_roadbossCooldown = _data.enimy_roadbossCooldown;
+	global.enemy_boss_lary_DMG    = _data.enemy_boss_lary_DMG;
+	global.enemy_boss_lary_HP     = _data.enemy_boss_lary_HP;
+	global.enemy_boss_lary_Speed  = _data.enemy_boss_lary_Speed;
+	global.enemy_boss_lary_Cooldown = _data.enemy_boss_lary_Cooldown;
+	global.bulletSpeed           = _data.bulletSpeed;
+	
+	// Restore camera
+	global.zoom_level_character  = _data.zoom_level_character;
+	
+	// Restore chest & door states
+	if (variable_struct_exists(_data, "chest_states")) {
+		global.chest_states = _data.chest_states;
+	}
+	if (variable_struct_exists(_data, "door_states")) {
+		global.door_states = _data.door_states;
+	}
+	// Restore intro cutscene flag (backward-compatible with old saves)
+	if (variable_struct_exists(_data, "intro_played")) {
+		global.intro_played = _data.intro_played;
+	} else {
+		global.intro_played = true; // old save = intro was already seen
+	}
+	
+	// Restore gold coins
+	if (variable_struct_exists(_data, "gold_coins")) {
+		global.gold_coins = _data.gold_coins;
+	}
+	
+	// Restore armor
+	if (variable_struct_exists(_data, "armor_level")) {
+		global.armor_level = _data.armor_level;
+	}
+	if (variable_struct_exists(_data, "owned_armors")) {
+		global.owned_armors = _data.owned_armors;
+	} else {
+		global.owned_armors = [false, false, false, false];
+	}
+	if (variable_struct_exists(_data, "current_armor")) {
+		global.current_armor = _data.current_armor;
+	} else {
+		global.current_armor = -1;
+	}
+	
+	// Restore weapons
+	if (variable_struct_exists(_data, "owned_weapons")) {
+		global.owned_weapons = _data.owned_weapons;
+	}
+	if (variable_struct_exists(_data, "current_weapon")) {
+		global.current_weapon = _data.current_weapon;
+	}
+
+	// Restore items (cigarettes)
+	if (variable_struct_exists(_data, "item_counts")) {
+		global.item_counts = _data.item_counts;
+	} else {
+		global.item_counts = [0, 0];
+	}
+	if (variable_struct_exists(_data, "speed_boost_timer")) {
+		global.speed_boost_timer = _data.speed_boost_timer;
+	} else {
+		global.speed_boost_timer = 0;
+	}
+
+	// Restore exponential pricing counter
+	if (variable_struct_exists(_data, "total_purchases")) {
+		global.total_purchases = _data.total_purchases;
+	} else {
+		global.total_purchases = 0;
+	}
+	
+	// Set active slot
+	global.active_slot = slot;
+	
+	// Navigate to saved room
+	room_goto(global.curent_room);
+	
+	show_debug_message("Game loaded from slot " + string(slot));
+	return true;
 }
-function save_slot(_slot, _autosave=false) {
-    if (_slot<1 || _slot>3) return false;
-    var data=save_payload();
-    var text=json_stringify(data);
-    var f=file_text_open_write(save_path(_slot));
-    if (f<0) return false;
-    file_text_write_string(f,text); file_text_close(f);
-    // Verify the file immediately so a failed write is not treated as a valid save.
-    var vf=file_text_open_read(save_path(_slot));
-    if (vf<0) return false;
-    var verify=file_text_read_string(vf); file_text_close(vf);
-    if (string_length(verify)<2) return false;
-    return true;
+
+/// @function scr_delete_save(slot)
+/// @description Deletes a save file
+/// @param {real} slot The save slot number (1, 2, or 3)
+function scr_delete_save(slot) {
+	if (slot < 1 || slot > 3) return;
+	
+	var _filename = game_save_id + "save_slot_" + string(slot) + ".json";
+	if (file_exists(_filename)) {
+		file_delete(_filename);
+		show_debug_message("Save slot " + string(slot) + " deleted");
+	}
 }
-function save_autosave() {
-    save_system_init();
-    return save_slot(1,true);
+
+/// @function scr_save_exists(slot)
+/// @description Checks if a save file exists for a given slot
+/// @param {real} slot The save slot number (1, 2, or 3)
+/// @returns {bool} true if save exists
+function scr_save_exists(slot) {
+	if (slot < 1 || slot > 3) return false;
+	return file_exists(game_save_id + "save_slot_" + string(slot) + ".json");
 }
-function load_slot(_slot) {
-    if (_slot<1 || _slot>3 || !file_exists(save_path(_slot))) return false;
-    var f=file_text_open_read(save_path(_slot));
-    if (f<0) return false;
-    var text=file_text_read_string(f); file_text_close(f);
-    var data=json_parse(text);
-    if (!is_struct(data) || !variable_struct_exists(data,"version")) return false;
-    global.Pos_x=data.x; global.Pos_y=data.y; global.latest_checkpoint=data.checkpoint;
-    global.player_hp=data.hp; global.max_player_hp=data.max_hp; global.player_armor=data.armor; global.max_player_armor=data.max_armor;
-    global.HealitemCount=data.heal_count; global.MaxHealitemCount=data.max_heal; global.difficulity=data.difficulty;
-    global.current_weapon_slot=data.current_weapon; global.weapon_inventory=data.weapon_inventory;
-    global.checkpoint_flags=data.checkpoint_flags; global.story_flags=data.story_flags; global.boss_flags=data.boss_flags;
-    global.playtime_seconds=data.playtime;
-    if (room != data.room) room_goto(data.room); else room_restart();
-    return true;
+
+/// @function scr_get_save_info(slot)
+/// @description Returns a display string for a save slot
+/// @param {real} slot The save slot number (1, 2, or 3)
+/// @returns {string} Display info or "Empty"
+function scr_get_save_info(slot) {
+	if (!scr_save_exists(slot)) return "Empty";
+	
+	var _filename = game_save_id + "save_slot_" + string(slot) + ".json";
+	var _file = file_text_open_read(_filename);
+	if (_file == -1) return "Empty";
+	
+	var _json = "";
+	while (!file_text_eof(_file)) {
+		_json += file_text_read_string(_file);
+		file_text_readln(_file);
+	}
+	file_text_close(_file);
+	
+	var _data = json_parse(_json);
+	if (!is_struct(_data)) return "Empty";
+	
+	// Get difficulty name
+	var _diff_name = "Normal";
+	switch (_data.difficulity) {
+		case 0: _diff_name = "Easy"; break;
+		case 1: _diff_name = "Normal"; break;
+		case 2: _diff_name = "Hard"; break;
+		case 3: _diff_name = "Dominic"; break;
+	}
+	
+	// Get room name
+	var _room_name = "Unknown";
+	if (_data.curent_room == Startroom_battle) { _room_name = "Start Battle"; }
+	else if (_data.curent_room == Battle1)     { _room_name = "Battle 1"; }
+	else if (_data.curent_room == Battle2)     { _room_name = "Battle 2"; }
+	else if (_data.curent_room == bossfight)   { _room_name = "Boss Fight"; }
+	else if (_data.curent_room == TestRoom)    { _room_name = "Test Room"; }
+	else if (_data.curent_room == lausgang)    { _room_name = "Lausgang"; }
+	else { _room_name = room_get_name(_data.curent_room); }
+	
+	return _diff_name + " - " + _room_name;
 }
-function delete_save_slot(_slot) {
-    if (_slot<1 || _slot>3) return false;
-    var p=save_path(_slot); if (file_exists(p)) file_delete(p);
-    return true;
+
+/// @function scr_sync_armor_level()
+/// @description Syncs global.armor_level from global.current_armor. Call after changing equipment.
+function scr_sync_armor_level() {
+	if (global.current_armor >= 0 && global.current_armor < array_length(global.armor_resists)) {
+		if (global.owned_armors[global.current_armor]) {
+			global.armor_level = global.armor_resists[global.current_armor];
+			return;
+		}
+	}
+	global.armor_level = 0;
 }
-function save_slot_exists(_slot) { return (_slot>=1 && _slot<=3 && file_exists(save_path(_slot))); }
-function save_slot_info(_slot) {
-    if (!save_slot_exists(_slot)) return {exists:false,label:"EMPTY",area:"—",checkpoint:"—",playtime:"00:00:00"};
-    var f=file_text_open_read(save_path(_slot)); if (f<0) return {exists:false,label:"CORRUPT",area:"—",checkpoint:"—",playtime:"—"};
-    var text=file_text_read_string(f); file_text_close(f);
-    var ok=true; var data=undefined;
-    try { data=json_parse(text); } catch(e) { ok=false; }
-    if (!ok || !is_struct(data)) return {exists:false,label:"CORRUPT",area:"—",checkpoint:"—",playtime:"—"};
-    var secs=max(0,real(data.playtime));
-    return {exists:true,label:"SAVE SLOT "+string(_slot),area:string(data.room_name),checkpoint:string(data.checkpoint),playtime:string(floor(secs/3600))+":"+string_format(floor((secs%3600)/60),2,0)+":"+string_format(floor(secs%60),2,0)};
+
+/// @function scr_shop_price(base_cost)
+/// @description Returns the exponential shop price for an item.
+function scr_shop_price(base_cost) {
+	return floor(base_cost * power(global.price_exponent, global.total_purchases));
 }

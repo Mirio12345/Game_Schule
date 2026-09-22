@@ -1,182 +1,200 @@
+globalvar Pos_x;
+globalvar Pos_y;
 hp = global.player_hp;
 
-// --- Cutscene: Gameplay wirklich kurz anhalten ---
-if (banner_timer > 0)
-{
-    if (keyboard_check_pressed(vk_space)) banner_timer = 1;
-    banner_timer -= 1;
-    global.game_cutscene_active = true;
+// Update weapon damage multiplier for this frame
+weapon_dmg_mult = global.weapon_dmg_mults[global.current_weapon];
 
-    // Während des Dialogs weder bewegen, schießen, heilen noch Perks aktivieren.
-    if (banner_timer <= 0) global.game_cutscene_active = false;
-    exit;
-}
-else
+// --- Death check (always runs, even during cutscenes) ---
+if hp <= 0
 {
-    global.game_cutscene_active = false;
+	room_persistent = false;
+	room_goto(Death_screen);
 }
 
-// --- Cooldowns / Perk-Timer ---
-if (armor_perk_cooldown > 0) armor_perk_cooldown -= 1;
-if (pierce_perk_cooldown > 0) pierce_perk_cooldown -= 1;
-if (pierce_perk_timer > 0) pierce_perk_timer -= 1;
-if (sprint_cooldown > 0) sprint_cooldown -= 1;
-
-// Z: Rüstung auf exakt 50% zurücksetzen, danach 5 s Cooldown.
-if (keyboard_check_pressed(ord("Z")) && armor_perk_cooldown <= 0)
-{
-    global.player_armor = global.max_player_armor * 0.5;
-    armor_perk_cooldown = perk_cooldown_max;
-}
-
-// N: 5 s lang sind alle neu abgefeuerten Kugeln Piercing + One-Shot.
-if (keyboard_check_pressed(ord("N")) && pierce_perk_cooldown <= 0)
-{
-    pierce_perk_timer = perk_cooldown_max;
-    pierce_perk_cooldown = perk_cooldown_max;
-}
+// --- Movement & Input: only when global.can_move is true ---
+if (variable_global_exists("can_move") && global.can_move == false) {
+	// During cutscenes: keep idle sprite, skip all input
+	sprite_index = Gamecharacter_standart;
+} else {
 
 var _right = keyboard_check(ord("D"));
-var _down  = keyboard_check(ord("S"));
-var _left  = keyboard_check(ord("A"));
-var _up    = keyboard_check(ord("W"));
+var _down = keyboard_check(ord("S"));
+var _left = keyboard_check(ord("A"));
+var _up = keyboard_check(ord("W"));
+
 
 var xinput = _right - _left;
-var yinput = _down   - _up;
-var _is_moving = (xinput != 0 || yinput != 0);
+var yinput = _down	- _up;
 
-// --- Sprint ---
-// Shift + Bewegung nutzt Ausdauer. Erst wenn die Leiste komplett leer ist,
-// startet der gewünschte 10-Sekunden-Cooldown. Danach ist die Ausdauer wieder voll.
-var _wants_to_sprint = keyboard_check(vk_shift) && _is_moving;
-is_sprinting = (_wants_to_sprint && stamina > 0 && sprint_cooldown <= 0);
-
-var _current_speed = my_speed;
-if (is_sprinting)
-{
-    _current_speed *= global.sprintMultiplier;
-    stamina = max(0, stamina - global.staminaDrain);
-    if (stamina <= 0)
-    {
-        sprint_cooldown = sprint_cooldown_max;
-        is_sprinting = false;
-    }
-}
-else if (sprint_cooldown <= 0)
-{
-    stamina = min(global.staminaMax, stamina + global.staminaRegen);
+// Apply speed boost from smoked green cigarette
+var _eff_speed = my_speed;
+if (global.speed_boost_timer > 0) {
+	_eff_speed *= 1.2;
+	global.speed_boost_timer--;
 }
 
-if (sprint_cooldown == 1)
-{
-    stamina = global.staminaMax;
-}
+move_and_collide(xinput * _eff_speed, yinput * _eff_speed, [Wall,Halfwall,Wall_class])
 
-move_and_collide(xinput * _current_speed, yinput * _current_speed, collision_walls);
 
-if (hp <= 0)
-{
-    room_persistent = false;
-    room_goto(Death_screen);
-}
-
-// Sprite-Auswahl als else-if-Kette: bricht früher ab (weniger Vergleiche)
-// und ist eindeutig in der Priorität. Ergebnis ist identisch zum alten
-// Code aus vier unabhängigen ifs (dort "gewann" bei Diagonalbewegung immer
-// die zuletzt geprüfte Achse, also Y vor X - das bildet diese Kette 1:1 ab).
-if (yinput < 0)
-{
-	sprite_index = walk_sprites[1];
-}
-else if (yinput > 0)
-{
-	sprite_index = walk_sprites[3];
-}
-else if (xinput < 0)
+if xinput < 0
 {
 	sprite_index = walk_sprites[2];
 }
-else if (xinput > 0)
+if xinput > 0
 {
 	sprite_index = walk_sprites[0];
 }
-else
+if yinput < 0
+{
+	sprite_index = walk_sprites[1];
+}
+if yinput > 0
+{
+	sprite_index = walk_sprites[3];
+}
+if xinput == 0 && yinput == 0
 {
 	sprite_index = Gamecharacter_standart;
 }
 
 //Keyboard checks
-if (keyboard_check_pressed(vk_escape))
+if keyboard_check_pressed(vk_escape)
 {
-	global.Pos_x = x;
-	global.Pos_y = y;
-	global.curentroom = room;
-	room_goto(Startscreen);
+ global.Pos_x = x;
+ global.Pos_y = y;
+ global.curentroom = room;
+ room_goto(Startscreen);
 }
 
-if (keyboard_check(ord("E")) && can_heal && (hp != global.max_player_hp))
+if (keyboard_check(ord("E"))  && can_heal && (hp != global.max_player_hp))
 {
-	if (global.HealitemCount > 0)
+	if global.HealitemCount > 0
 	{
-		global.HealitemCount -= 1;
-		global.player_hp = min(global.player_hp + (global.HealValue * global.HealMultiplier), global.max_player_hp);
+		global.HealitemCount = global.HealitemCount - 1
+		if ((global.player_hp + (global.HealValue * global.HealMultiplier))  <= global.max_player_hp)
+		{
+			global.player_hp = global.player_hp + (global.HealValue * global.HealMultiplier);
+		}
+		else
+		{
+			global.player_hp = global.max_player_hp;
+		}
 	}
 	can_heal = false;
 	alarm[1] = drink_cooldown;
 }
 
+// Smoke cigarette: E when HP is full and you have cigarettes
+if (keyboard_check_pressed(ord("E")) && hp >= global.max_player_hp && can_smoke) {
+	// Find first cigarette in inventory (check green first for speed boost)
+	var _smoked = -1;
+	if (global.item_counts[1] > 0) { _smoked = 1; }
+	else if (global.item_counts[0] > 0) { _smoked = 0; }
+	
+	if (_smoked >= 0) {
+		global.item_counts[_smoked]--;
+		can_smoke = false;
+		alarm[3] = smoke_cooldown;
+		
+		// Green cigarette: 10 second speed boost
+		if (_smoked == 1) {
+			global.speed_boost_timer = 600; // 10 seconds at 60fps
+		}
+	}
+}
+
+// Tick down item cooldown
+if (global.item_cooldown > 0) {
+	global.item_cooldown--;
+}
+
+
+
 if (mouse_check_button(mb_left) && can_shoot)
 {
 	// 1. Richtung zur Maus im Room berechnen
-	var dir_to_mouse = point_direction(x, y, mouse_x, mouse_y);
-
-	// 2. Kugel erstellen
-	var bullet = instance_create_depth(x, y, -1, obj_player_bullet);
-
-	// 3. Werte an die Kugel übertragen
-	with (bullet) {
+    var dir_to_mouse = point_direction(x, y, mouse_x, mouse_y);
+    
+    // 2. Kugel erstellen
+    var bullet = instance_create_depth(x, y, -1, obj_player_bullet);
+    
+    // 3. Werte an die Kugel übertragen
+    with (bullet) {
         direction = dir_to_mouse;
         image_angle = dir_to_mouse;
         speed = global.bulletSpeed;
-        perk_piercing_oneshot = (other.pierce_perk_timer > 0);
+        weapon_dmg_mult = other.weapon_dmg_mult;
     }
-
-	// 4. Cooldown aktivieren
-	can_shoot = false;
-	alarm[0] = shoot_cooldown;
+    
+    // 4. Cooldown aktivieren
+    can_shoot = false;
+    alarm[0] = shoot_cooldown * global.weapon_spd_mults[global.current_weapon];
 }
-
 if (mouse_check_button(mb_right) && can_reflect)
 {
 	var _parry_radius = 100; // How close the bullet needs to be
-
-	// Find all bullets within the radius
-	with (obj_enemy_bullet) {
-		if (point_distance(x, y, other.x, other.y) < _parry_radius) {
-			instance_destroy(self);
-		}
-	}
+    
+    // Find all bullets within the radius
+    with (obj_enemy_bullet) {
+        if (point_distance(x, y, other.x, other.y) < _parry_radius) {
+            
+            instance_destroy(self);
+        }
+    }
 	can_reflect = false;
 	alarm[2] = reflect_cooldown;
 }
 
-//Checkpoint System (vorher 3x fast identischer if-Block, jetzt eine Schleife
-//über die im Create-Event definierte checkpoints-Liste)
-if (keyboard_check(ord("R")))
+//Checkpoint System
+if keyboard_check(ord("R"))
 {
-	for (var i = 0; i < array_length(checkpoints); i++)
+	if  distance_to_object(Checkpoint_3_Startbattleroom) < 5
 	{
-		var _cp = checkpoints[i];
-		if (distance_to_object(_cp.inst) < 5)
-		{
-			global.Pos_x = x;
-			global.Pos_y = y;
-			global.latest_checkpoint = _cp.id;
-			global.HealitemCount = global.MaxHealitemCount;
-			global.player_hp = global.max_player_hp;
-			room_persistent = false;
-			room_restart();
-			break;
+		global.Pos_x = x;
+		global.Pos_y = y;
+		if (global.latest_checkpoint != 3) {
+		global.latest_checkpoint = 3;
 		}
+		global.HealitemCount = global.MaxHealitemCount;
+		global.player_hp = global.max_player_hp;
+		global.curent_room = room;
+		// Auto-save at checkpoint
+		if (global.active_slot > 0) { scr_save_game(global.active_slot); }
+		room_persistent = false;
+		room_restart();
+	}
+	if  distance_to_object(Checkpoint_4_Battle1) <  5
+	{
+		global.Pos_x = x;
+		global.Pos_y = y;
+		if (global.latest_checkpoint != 4) {
+		global.latest_checkpoint = 4;
+		}
+		global.HealitemCount = global.MaxHealitemCount;
+		global.player_hp = global.max_player_hp;
+		global.curent_room = room;
+		// Auto-save at checkpoint
+		if (global.active_slot > 0) { scr_save_game(global.active_slot); }
+		room_persistent = false;
+		room_restart();
+	}
+	if  distance_to_object(Checkpoint_5_Battle2) <  5
+	{
+		global.Pos_x = x;
+		global.Pos_y = y;
+		if (global.latest_checkpoint != 5) {
+		global.latest_checkpoint = 5;
+		}
+		global.HealitemCount = global.MaxHealitemCount;
+		global.player_hp = global.max_player_hp;
+		global.curent_room = room;
+		// Auto-save at checkpoint
+		if (global.active_slot > 0) { scr_save_game(global.active_slot); }
+		room_persistent = false;
+		room_restart();
 	}
 }
+
+} // end can_move check
+
