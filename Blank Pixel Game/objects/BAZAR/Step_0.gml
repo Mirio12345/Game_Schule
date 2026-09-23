@@ -102,18 +102,16 @@ if (shop_open) {
 					notif_text  = "Not enough coins! Need " + string(_price);
 					notif_timer = 90;
 					notif_color = make_color_rgb(220, 80, 80);
-					exit;
+				} else {
+					global.gold_coins -= _price;
+					global.owned_armors[shop_selected] = true;
+					global.total_purchases++;
+					scr_sync_armor_level();
+					
+					notif_text  = "Bought " + global.armor_names[shop_selected] + "! (" + string(_price) + " coins)";
+					notif_timer = 120;
+					notif_color = make_color_rgb(100, 220, 100);
 				}
-			}
-				global.gold_coins -= _price;
-				global.owned_armors[shop_selected] = true;
-				global.current_armor = shop_selected;
-				global.total_purchases++;
-				scr_sync_armor_level();
-				
-				notif_text  = "Bought " + global.armor_names[shop_selected] + "! (" + string(_price) + " coins)";
-				notif_timer = 120;
-				notif_color = make_color_rgb(100, 220, 100);
 			}
 		}
 		// --- Weapon tab ---
@@ -140,27 +138,24 @@ if (shop_open) {
 					notif_text  = "Not enough coins! Need " + string(_price);
 					notif_timer = 90;
 					notif_color = make_color_rgb(220, 80, 80);
-					exit;
+				} else {
+					global.gold_coins -= _price;
+					global.owned_weapons[shop_selected] = true;
+					global.total_purchases++;
+					
+					notif_text  = "Bought " + global.weapon_names[shop_selected] + "! (" + string(_price) + " coins)";
+					notif_timer = 120;
+					notif_color = make_color_rgb(100, 220, 100);
 				}
-				
-				global.gold_coins -= _price;
-				global.owned_weapons[shop_selected] = true;
-				global.current_weapon = shop_selected;
-				global.total_purchases++;
-				
-				notif_text  = "Bought " + global.weapon_names[shop_selected] + "! (" + string(_price) + " coins)";
-				notif_timer = 120;
-				notif_color = make_color_rgb(100, 220, 100);
 			}
 		}
-		// --- Items tab (buy cigarettes) ---
-		else {
+		
+		// Auto-save if a save slot is active
 		if (global.active_slot > 0) {
 			scr_save_game(global.active_slot);
 		}
 	}
-	
-	// Close with Escape
+
 	if (keyboard_check_pressed(vk_escape)) {
 		anim_state = 3;
 		global.can_move = true;
