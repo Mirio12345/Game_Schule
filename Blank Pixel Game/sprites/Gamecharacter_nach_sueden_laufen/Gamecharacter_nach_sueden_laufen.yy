@@ -1,10 +1,10 @@
 {
   "$GMSprite":"v2",
   "%Name":"Gamecharacter_nach_sueden_laufen",
-  "bboxMode":0,
-  "bbox_bottom":237,
+  "bboxMode":2,
+  "bbox_bottom":236,
   "bbox_left":78,
-  "bbox_right":181,
+  "bbox_right":182,
   "bbox_top":18,
   "collisionKind":2,
   "collisionTolerance":0,

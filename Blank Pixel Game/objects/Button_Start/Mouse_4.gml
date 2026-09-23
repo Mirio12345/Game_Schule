@@ -25,7 +25,7 @@ catch(_error)
 	global.enemyCooldown = 45;
 	//enemy boss
 	global.enimy_roadbossDMG = 18;
-	global.enimy_roadbossHP = 300;
+	global.enimy_roadbossHP = 360;
 	global.enimy_roadbossSpeed = 1;
 	global.enimy_roadbossCooldown = 20;
 	//enemy_boss_lary
@@ -36,6 +36,15 @@ catch(_error)
 
 	global.bulletSpeed = 10;
 	global.curent_room = Startroom_battle;
+	
+	// Reset save state for new game
+	global.active_slot = 0;
+	if (!variable_global_exists("chest_states")) { global.chest_states = {}; }
+	if (!variable_global_exists("door_states")) { global.door_states = {}; }
+	global.chest_states = {};
+	global.door_states = {};
+	// Intro cutscene flag – play once on new game
+	global.intro_played = false;
 
 	room_goto(global.curent_room);
 }
