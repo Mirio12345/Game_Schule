@@ -1,46 +1,104 @@
-# ToDo:
 
-## David:
--
 
-## Michi:
--
 
-## Amin:
--
+# Hallo, das ist eine Dokumentation für zweites Part für das Projekt.
 
-## Maxim
--
+## 27.10.2025:
+### Dokumentation für amin (wurde das Entwurf von das Spiel mit ersten Teil zusammenkombiniert)
 
-# ToDo All:
-1.Kapitel im 1. Halbjahr ins Game bringen sowie 2. Kapitel im 2. Halbjahr
+<img width="256" height="256" alt="Worldmap" src="https://github.com/user-attachments/assets/ad8c61d4-b984-429a-bba1-023f717bdde9" />
 
-## Wichtig! Alle 2 Wochen eine Deadline für Aufgaben
-## Kapitel1:
+## 29.10.2025
 
- Cut Scene Maybe wo der main vom coma aufwacht 
+### Dokumentation von Amin: der Sprite Swinjya wurde hinzugefügt
 
- Bazzar 
- - Händler
+<img width="590" height="590" alt="image" src="https://github.com/user-attachments/assets/1f8127a8-448b-486a-9f62-bfc4f9ce3323" />
 
- Cut Scene wo irgenwas gestohlen wird sowas in der Art 
+## 3.11.2025
 
- man muss in der Stadt eine Investigation machen um zu wissen was passiert ist
- - Mit Personenen Reden / Interagieren
+#### Amin hat die map dem Storyboard angepasst
 
- Man finden heraus das man einen militair Ausenposten raiden muss
+<img width="256" height="256" alt="Worldmap" src="https://github.com/user-attachments/assets/d70a92ee-6a68-4b29-9ee9-6de190dc4c37" />
 
-### Systeme:
- - Save trough Game Close 👍
- - Amin Gold coins die beim Töten direkt oben links in einen counter gehen 👍
- - Invetar 
- - Andere Zigareten wie einige die dir Speedboost geben 
- - Text Boxen 
- - Cutscene 👍
- - Armor (Upgrades)
- - Wapons (Upgrades)
- - Kampf System (Exestiert schon)
- - Map Mit Fast travel wenn checkpoint aktiviert wurde
+## 24.11.2025: Update des Worldmaps des Spieles
+ 
+<img width="256" height="256" alt="Worldmap" src="https://github.com/user-attachments/assets/7a4426fd-ed12-4291-88d7-6e185e8c69a0" /> 
 
-## ZIEL BIS ZUM ERSTEN HALBJAHR !!!!!!
-# Dokumentation 2.Jahr
+## 24.11.2025: Update des Worldmap für das Spiel mit + 1 Stadt
+
+
+<img width="1024" height="720" alt="links ausgang1" src="https://github.com/user-attachments/assets/f3304140-9859-44cc-bb18-9afde011e5c8" />
+
+## 01.12.2025: Update des Maps mit +1 Room
+
+<img width="3000" height="3000" alt="Gravenlord-export" src="https://github.com/user-attachments/assets/44204dbd-8f0f-418d-b206-1d4f800dc018" />
+
+
+## 04.02.2026: Erster Konzept des Spielmaps von Gravenlord
+
+<img width="1121" height="785" alt="image" src="https://github.com/user-attachments/assets/5bab3ccd-26ef-4cc4-ae98-98bb65ee51fd" />
+
+
+## 23.02.2026: Weiterarbeit bei der Konzept des Spielmaps von Gravenlord. Der gewünschte Bazar wurde hinzugefügt
+
+
+
+<img width="770" height="445" alt="image" src="https://github.com/user-attachments/assets/0cd49c4c-b74b-40ed-9fb2-ecfbe70a61d0" />
+
+
+## 04.03.2026: Wurde eine Skizze zu ersten Level ins Spielprojekt hinzugefügt und Bewegungskript mit zooming funktioniert
+
+<img width="341" height="246" alt="image" src="https://github.com/user-attachments/assets/a7fa5c7e-797e-41a8-b401-5a420ddf29de" />
+
+#### Objekte ins Spiel erstmal
+
+<img width="1133" height="899" alt="image" src="https://github.com/user-attachments/assets/f5c4cd95-b53c-4bc2-b6d8-35f9284393e0" />
+
+#### StartScreen
+
+<img width="1035" height="765" alt="image" src="https://github.com/user-attachments/assets/b0c474b5-b40e-487f-abcd-182536062d1d" />
+
+<img width="1047" height="761" alt="image" src="https://github.com/user-attachments/assets/528b4ca9-5f37-4880-ace2-102475445175" />
+
+#### Bewegungsskript
+
+## Stand: 11.05.2026
+
+<img width="784" height="436" alt="image" src="https://github.com/user-attachments/assets/f8889da2-eba7-4040-aef3-856433806980" />
+
+#### Mit Bossraum weitergearbeitet (ist erstmal fertig)
+
+<img width="274" height="118" alt="image" src="https://github.com/user-attachments/assets/0f0539b5-2aef-4ce4-8eff-aa1dd9508c7e" />
+
+#### die Gegner, die dich angreifen (enemy_boss_lary ist Gegner der mit den Boss jede 5 Sekunden erscheint)
+
+<img width="339" height="337" alt="image" src="https://github.com/user-attachments/assets/11c3a711-194c-47c5-98e4-6a8f201e2406" />
+
+#### von Maxim: der Chest wurde hinzugefügt
+
+<img width="322" height="90" alt="image" src="https://github.com/user-attachments/assets/56c600a7-4225-4795-ae3b-c9bb5caef51d" />
+
+#### der Heilungsmitel (Zigaretten) wurde hinzugefügt
+
+<img width="345" height="117" alt="image" src="https://github.com/user-attachments/assets/1637a4e1-ca29-4735-825f-62bcc1a3047e" />
+
+
+<img width="813" height="459" alt="image" src="https://github.com/user-attachments/assets/5a483631-bc3f-44c4-83dc-3d103fbc7933" />
+
+
+<img width="719" height="488" alt="image" src="https://github.com/user-attachments/assets/2cb9e197-67ac-456c-851c-f79b9b6284fa" />
+
+
+<img width="833" height="477" alt="image" src="https://github.com/user-attachments/assets/877bc95c-5048-4540-9f6f-705adc19c61d" />
+
+
+#### insgesamt 3 Levels vorhanden (inklusive Bossraum)
+
+
+## Stand: 13.05.2026
+
+
+<img width="234" height="93" alt="image" src="https://github.com/user-attachments/assets/b84ad7ba-576d-4565-a1b5-a8f33bd1f55c" />
+
+
+#### Der Schaden von Gegner wurde gefixt (jeder Gegner macht sein vorgegebenes Schaden)
