@@ -24,7 +24,7 @@ if (!variable_global_exists("enemy_lary_coins")) {
 	global.enemy_lary_coins = 10;
 }
 if (!variable_global_exists("enemy_boss_lary_coins")) {
-	global.enemy_boss_lary_coins = 50;
+	global.enemy_boss_lary_coins = 5;
 }
 if (!variable_global_exists("enemy_roadboss_coins")) {
 	global.enemy_roadboss_coins = 100;

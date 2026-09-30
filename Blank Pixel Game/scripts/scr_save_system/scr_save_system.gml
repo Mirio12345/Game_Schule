@@ -220,6 +220,7 @@ function scr_get_save_info(slot) {
 	else if (_data.curent_room == bossfight)   { _room_name = "Boss Fight"; }
 	else if (_data.curent_room == TestRoom)    { _room_name = "Test Room"; }
 	else if (_data.curent_room == lausgang)    { _room_name = "Lausgang"; }
+	else if (_data.curent_room == Bazar)    { _room_name = "Bazar"; }
 	else { _room_name = room_get_name(_data.curent_room); }
 	
 	return _diff_name + " - " + _room_name;
