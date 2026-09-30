@@ -164,6 +164,21 @@ if keyboard_check(ord("R"))
 		room_persistent = false;
 		room_restart();
 	}
+	if  distance_to_object(Checkpoint_6_Bazar) <  5
+	{
+		global.Pos_x = x;
+		global.Pos_y = y;
+		if (global.latest_checkpoint != 6) {
+		global.latest_checkpoint = 6;
+		}
+		global.HealitemCount = global.MaxHealitemCount;
+		global.player_hp = global.max_player_hp;
+		global.curent_room = room;
+		// Auto-save at checkpoint
+		if (global.active_slot > 0) { scr_save_game(global.active_slot); }
+		room_persistent = false;
+		room_restart();
+	}
 }
 
 } // end can_move check
