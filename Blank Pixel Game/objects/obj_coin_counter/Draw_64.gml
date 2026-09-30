@@ -1,19 +1,13 @@
 // obj_coin_counter - Draw_64 Event (GUI Layer)
 // Draw the gold coin counter in the top-left corner
-
-// Draw coin icon (golden circle)
-// Border
-draw_set_color(coin_border_color);
-draw_circle(gui_x, gui_y, coin_size + 1, false);
-
-// Fill
-draw_set_color(coin_color);
-draw_circle(gui_x, gui_y, coin_size, false);
-
-// Highlight
-draw_set_color(#FFF8DC);
-draw_circle(gui_x - 2, gui_y - 2, coin_size * 0.4, false);
-
+var _spr = sprite_index;
+if (_spr != -1) {
+	var _sw = sprite_get_width(_spr);
+	if (_sw > 0) {
+		var _s = (coin_size * 2) / _sw;
+		draw_sprite_ext(_spr, 0, gui_x - coin_size, gui_y - coin_size, _s, _s, 0, c_white, 1);
+	}
+}
 // Draw coin count text
 draw_set_color(text_shadow_color);
 draw_set_halign(fa_left);

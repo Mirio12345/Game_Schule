@@ -1,20 +1,16 @@
 // obj_coin_fly - Draw_64 Event (GUI Layer)
-// Draw the flying coin as a golden circle with optional number text
+// Draw the flying coin as the Amin_Gold_coin sprite with optional number text
 
-// Draw the coin circle with gold color
+// Draw the coin sprite
 draw_set_alpha(alpha);
-
-// Draw border
-draw_set_color(coin_border_color);
-draw_circle(gui_x, gui_y, coin_size + 1, false);
-
-// Draw coin fill
-draw_set_color(coin_color);
-draw_circle(gui_x, gui_y, coin_size, false);
-
-// Draw coin highlight (lighter gold for 3D effect)
-draw_set_color(#FFF8DC);
-draw_circle(gui_x - 2, gui_y - 2, coin_size * 0.4, false);
+var _spr = sprite_index;
+if (_spr != -1) {
+	var _sw = sprite_get_width(_spr);
+	if (_sw > 0) {
+		var _s = (coin_size * 2) / _sw;
+		draw_sprite_ext(_spr, 0, gui_x - coin_size, gui_y - coin_size, _s, _s, 0, c_white, alpha);
+	}
+}
 
 // Draw coin number (optional - show coin_value)
 draw_set_color(c_white);
