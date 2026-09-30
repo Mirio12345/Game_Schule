@@ -119,6 +119,7 @@
     {"id":{"name":"Startroom_battle","path":"rooms/Startroom_battle/Startroom_battle.yy",},},
     {"id":{"name":"Startscreen","path":"rooms/Startscreen/Startscreen.yy",},},
     {"id":{"name":"scr_save_system","path":"scripts/scr_save_system/scr_save_system.yy",},},
+    {"id":{"name":"Amin_Gold_coin","path":"sprites/Amin_Gold_coin/Amin_Gold_coin.yy",},},
     {"id":{"name":"Bossraum","path":"sprites/Bossraum/Bossraum.yy",},},
     {"id":{"name":"candlestand","path":"sprites/candlestand/candlestand.yy",},},
     {"id":{"name":"checkpoint","path":"sprites/checkpoint/checkpoint.yy",},},
