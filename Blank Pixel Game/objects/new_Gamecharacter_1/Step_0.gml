@@ -53,7 +53,12 @@ if keyboard_check_pressed(vk_escape)
 {
  global.Pos_x = x;
  global.Pos_y = y;
- global.curentroom = room;
+ global.curent_room = room;
+ // Mark intro as played so it doesn't replay when returning
+ if (variable_global_exists("intro_played"))
+ {
+     global.intro_played = true;
+ }
  room_goto(Startscreen);
 }
 

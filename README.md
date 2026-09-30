@@ -36,7 +36,7 @@
  - Invetar 
  - Andere Zigareten wie einige die dir Speedboost geben 
  - Text Boxen 
- - Cutscene 👍
+ - Cutscene 🙃
  - Armor (Upgrades)
  - Wapons (Upgrades)
  - Kampf System (Exestiert schon)

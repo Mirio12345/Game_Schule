@@ -1,7 +1,25 @@
 event_inherited();
+
+// Save intro state before potentially resetting
+var _prev_intro = (variable_global_exists("intro_played")) ? global.intro_played : false;
+var _prev_room = (variable_global_exists("curent_room")) ? global.curent_room : undefined;
+
 try
 {
-	room_goto(global.curent_room);
+	// If we already have a saved room, just go there (don't reset anything)
+	if (!is_undefined(_prev_room))
+	{
+		// If intro was already played, make sure it stays played
+		if (_prev_intro)
+		{
+			global.intro_played = true;
+		}
+		room_goto(global.curent_room);
+	}
+	else
+	{
+		throw("no_room");
+	}
 }
 catch(_error)
 {
@@ -43,8 +61,21 @@ catch(_error)
 	if (!variable_global_exists("door_states")) { global.door_states = {}; }
 	global.chest_states = {};
 	global.door_states = {};
-	// Intro cutscene flag – play once on new game
-	global.intro_played = false;
+	// Intro cutscene flag – play once on new game (only reset for truly new games)
+	if (!_prev_intro)
+	{
+		global.intro_played = false;
+	}
+	else
+	{
+		global.intro_played = true;
+	}
+
+	// Inventory globals
+	global.inventory_open = false;
+	global.inventory_items = [];
+	global.gold_coins = 0;
+	global.speed_cigarettes = 0;
 
 	room_goto(global.curent_room);
 }
