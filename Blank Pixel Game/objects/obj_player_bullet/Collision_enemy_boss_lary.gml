@@ -1,1 +1,2 @@
-// Enemy collision handlers apply damage, then destroy this bullet.
+if (variable_global_exists("game_cutscene_active") && global.game_cutscene_active) exit;
+var dir=direction; damage_apply(other.id, perk_piercing_oneshot ? 999999 : damage, damage_type, owner_id, knockback, crit_chance, crit_mult, dir); if (!perk_piercing_oneshot) instance_destroy();

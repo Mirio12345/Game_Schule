@@ -10,7 +10,6 @@ catch(_error)
 	global.player_hp = 100;
 	global.playerDMG = 20;
 	global.max_player_hp = 100;
-	global.base_max_player_hp = 100;
 	global.playerSpeed = 2.25;
 	global.playerShootCooldown = 30;
 	global.playerReflectCooldown = 30;
@@ -46,7 +45,6 @@ catch(_error)
 	global.door_states = {};
 	// Intro cutscene flag – play once on new game
 	global.intro_played = false;
-	scr_sync_armor_level();
 
 	room_goto(global.curent_room);
 }

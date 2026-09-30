@@ -7,9 +7,6 @@ can_heal = true;
 can_reflect = true;
 can_smoke = true;
 smoke_cooldown = 120; // 2 seconds between smokes
-weapon_reload_time = 0;
-weapon_reload_duration = 1.3;
-weapon_reload_slot = -1;
 
 walk_sprites = [Gamecharacter_nach_rechts_laufen,Gamecharacter_nach_norden_laufen,Gamecharacter_nach_links_laufen,Gamecharacter_nach_sueden_laufen];
 face = 3;

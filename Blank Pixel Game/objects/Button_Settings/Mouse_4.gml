@@ -10,7 +10,6 @@ catch(_error)
 	global.player_hp = 100;
 	global.playerDMG = 20;
 	global.max_player_hp = 100;
-	global.base_max_player_hp = 100;
 	global.playerSpeed = 2.25;
 	global.playerShootCooldown = 30;
 	global.playerReflectCooldown = 30;
@@ -36,6 +35,5 @@ catch(_error)
 	global.enemy_boss_lary_Cooldown = 60;
 
 	global.bulletSpeed = 10;
-	scr_sync_armor_level();
 }
 room_goto(Settingsscreen);

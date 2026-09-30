@@ -66,7 +66,6 @@ function apply_difficulty(_difficulty, _full_reset) {
 
 	global.playerDMG             = _p.playerDMG;
 	global.max_player_hp         = _p.max_player_hp;
-	global.base_max_player_hp    = _p.max_player_hp;
 	global.playerSpeed           = _p.playerSpeed;
 	global.playerShootCooldown   = _p.playerShootCooldown;
 	global.playerReflectCooldown = _p.playerReflectCooldown;
@@ -107,14 +106,13 @@ function apply_difficulty(_difficulty, _full_reset) {
 		global.player_armor = min(global.player_armor, global.max_player_armor);
 	}
 
-	scr_sync_armor_level();
 	if (_full_reset) {
 		global.HealMultiplier = 1;
-		global.player_hp = global.max_player_hp;
+		global.player_hp = _p.max_player_hp;
 	} else if (variable_global_exists("player_hp")) {
 		// HP nicht über das (evtl. neue) Maximum stehen lassen
-		global.player_hp = min(global.player_hp, global.max_player_hp);
+		global.player_hp = min(global.player_hp, _p.max_player_hp);
 	} else {
-		global.player_hp = global.max_player_hp;
+		global.player_hp = _p.max_player_hp;
 	}
 }

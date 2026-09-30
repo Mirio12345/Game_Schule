@@ -1,5 +1,4 @@
 	if (instance_exists(other)) {
-		if (scr_mirror_enemy_bullet(other, id)) exit;
 		var _dmg = global.enimy_roadbossDMG;
 		_dmg = _dmg * (1 - global.armor_level / 100);
 		global.player_hp -= _dmg; 

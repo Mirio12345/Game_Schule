@@ -1,1 +1,1 @@
-// Enemy collision handlers apply damage, then destroy this bullet.
+instance_destroy();

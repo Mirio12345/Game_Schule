@@ -3,7 +3,6 @@ global.difficulity = 3;
 //player
 global.playerDMG = 10;
 global.max_player_hp = 100;
-global.base_max_player_hp = 100;
 global.playerSpeed = 2.25;
 global.playerShootCooldown = 60;
 global.playerReflectCooldown = 60;
@@ -39,4 +38,3 @@ catch(_error)
 {
 global.player_hp = 100;
 }
-scr_sync_armor_level();
