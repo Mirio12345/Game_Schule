@@ -173,12 +173,9 @@ else
     // Only restore can_move if no cutscene is active
     if (variable_global_exists("can_move"))
     {
-        // Don't override cutscene locks
-        var _cutscene_active = false;
-        if (instance_exists(obj_cutscene_coma))
-        {
-            _cutscene_active = variable_instance_exists(obj_cutscene_coma, "active") && obj_cutscene_coma.active;
-        }
+        // The cutscene destroys itself when finished,
+        // so if the instance exists, a cutscene is active
+        var _cutscene_active = instance_exists(obj_cutscene_coma);
         if (!_cutscene_active)
         {
             global.can_move = true;

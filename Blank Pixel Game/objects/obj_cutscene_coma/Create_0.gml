@@ -13,6 +13,12 @@ if (variable_global_exists("intro_played") && global.intro_played == true) {
 }
 
 // ============================================================
+//  LOCK PLAYER IMMEDIATELY  (prevent movement on the first frame
+//  before the Step event has a chance to run)
+// ============================================================
+global.can_move = false;
+
+// ============================================================
 //  STATE MACHINE
 // ============================================================
 // 0 = Black Screen        – "Where... am I?"
