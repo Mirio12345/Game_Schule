@@ -16,7 +16,7 @@
 1.Kapitel im 1. Halbjahr ins Game bringen sowie 2. Kapitel im 2. Halbjahr
 
 ## Wichtig! Alle 2 Wochen eine Deadline für Aufgaben
-## Projekt-Titel: 世界の終わり後
+## Projekt-Titel: 世界の終わり後 (Sekai no owari ato) – „Nach dem Weltende“
 ## Kapitel1:
 
  Cut Scene Maybe wo der main vom coma aufwacht 
