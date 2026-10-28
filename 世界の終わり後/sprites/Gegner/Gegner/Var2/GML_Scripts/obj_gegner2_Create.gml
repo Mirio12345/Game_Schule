@@ -10,10 +10,11 @@ hit_done        = false;
 state           = "idle";   // idle | chase | attack | dead
 facing          = 3;        // 0 = rechts, 1 = oben, 2 = links, 3 = unten
 
-spr_idle   = [spr_gegner2_idle_right,   spr_gegner2_idle_up,   spr_gegner2_idle_left,   spr_gegner2_idle_down];
-spr_walk   = [spr_gegner2_walk_right,   spr_gegner2_walk_up,   spr_gegner2_walk_left,   spr_gegner2_walk_down];
-spr_attack = [spr_gegner2_attack_right, spr_gegner2_attack_up, spr_gegner2_attack_left, spr_gegner2_attack_down];
-spr_death  = spr_gegner2_death;
+// Pro Animation nur EIN Sprite. Frame-Index = facing * Frames + Frame
+frames_idle   = 6;
+frames_walk   = 8;
+frames_attack = 6;
+anim_frame    = 0;
 
-sprite_index = spr_idle[facing];
-image_speed  = 0.15;
+sprite_index = spr_gegner2_idle;
+image_speed  = 0;           // Animation laeuft manuell im Step Event
