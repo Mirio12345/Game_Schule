@@ -76,6 +76,8 @@ catch(_error)
 	global.inventory_items = [];
 	global.gold_coins = 0;
 	global.speed_cigarettes = 0;
+	global.weapon_upgrade_level = 0;
+	global.armor_upgrade_level = 0;
 
 	room_goto(global.curent_room);
 }

@@ -1,1 +1,1 @@
-hp -= global.playerDMG;
+hp -= scr_weapon_damage();

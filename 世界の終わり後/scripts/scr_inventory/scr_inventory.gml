@@ -70,6 +70,65 @@ function scr_inventory_rebuild()
     }
 }
 
+// ============================================================
+//  UPGRADES (Weapon & Armor)
+//  Effects are derived from the upgrade LEVELS on read, so the
+//  difficulty buttons keep owning global.playerDMG / playerShootCooldown.
+// ============================================================
+
+/// @function scr_weapon_damage()
+/// @description Player bullet damage including weapon upgrade bonus.
+/// @returns {real}
+function scr_weapon_damage()
+{
+    var _level = (variable_global_exists("weapon_upgrade_level")) ? global.weapon_upgrade_level : 0;
+    return global.playerDMG * (1 + 0.15 * _level); // +15% damage per level
+}
+
+/// @function scr_weapon_cooldown(base)
+/// @description Shoot cooldown including weapon upgrade bonus.
+/// @param {real} base Difficulty-based cooldown in frames
+/// @returns {real}
+function scr_weapon_cooldown(base)
+{
+    var _level = (variable_global_exists("weapon_upgrade_level")) ? global.weapon_upgrade_level : 0;
+    return max(base * 0.5, base * (1 - 0.10 * _level)); // -10% per level, floor 50%
+}
+
+/// @function scr_armor_mitigate(dmg)
+/// @description Incoming damage including armor upgrade reduction.
+/// @param {real} dmg Raw damage amount
+/// @returns {real}
+function scr_armor_mitigate(dmg)
+{
+    var _level = (variable_global_exists("armor_upgrade_level")) ? global.armor_upgrade_level : 0;
+    return max(1, dmg * (1 - 0.05 * _level)); // -5% per level, min 1
+}
+
+/// @function scr_weapon_upgrade()
+/// @description Buys the next weapon upgrade level (called by the shop).
+/// @returns {real} New upgrade level
+function scr_weapon_upgrade()
+{
+    if (!variable_global_exists("weapon_upgrade_level")) global.weapon_upgrade_level = 0;
+    global.weapon_upgrade_level += 1;
+    if (instance_exists(new_Gamecharacter_1))
+    {
+        with (new_Gamecharacter_1) shoot_cooldown = scr_weapon_cooldown(global.playerShootCooldown);
+    }
+    return global.weapon_upgrade_level;
+}
+
+/// @function scr_armor_upgrade()
+/// @description Buys the next armor upgrade level (called by the shop).
+/// @returns {real} New upgrade level
+function scr_armor_upgrade()
+{
+    if (!variable_global_exists("armor_upgrade_level")) global.armor_upgrade_level = 0;
+    global.armor_upgrade_level += 1;
+    return global.armor_upgrade_level;
+}
+
 /// @function scr_inventory_add(item_name, item_sprite, count)
 /// @description Adds an item to the inventory
 /// @param {string} item_name The name of the item

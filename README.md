@@ -38,8 +38,8 @@
  - Andere Zigareten wie einige die dir Speedboost geben 
  - Text Boxen ✔
  - Cutscene 🙃
- - Armor (Upgrades)
- - Wapons (Upgrades)
+ - Armor (Upgrades) ✔
+ - Wapons (Upgrades) ✔
  - Kampf System (Exestiert schon)
  - Map Mit Fast travel wenn checkpoint aktiviert wurde
 

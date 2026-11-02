@@ -54,6 +54,11 @@ function scr_save_game(slot) {
 		
 		// Gold coins
 		gold_coins:            global.gold_coins,
+		
+		// Upgrades & consumables
+		weapon_upgrade_level:  global.weapon_upgrade_level,
+		armor_upgrade_level:   global.armor_upgrade_level,
+		speed_cigarettes:      global.speed_cigarettes,
 	};
 	
 	var _json = json_stringify(_data);
@@ -148,6 +153,23 @@ function scr_load_game(slot) {
 	// Restore gold coins
 	if (variable_struct_exists(_data, "gold_coins")) {
 		global.gold_coins = _data.gold_coins;
+	}
+	
+	// Restore upgrades & consumables (backward-compatible with old saves)
+	if (variable_struct_exists(_data, "weapon_upgrade_level")) {
+		global.weapon_upgrade_level = _data.weapon_upgrade_level;
+	} else {
+		global.weapon_upgrade_level = 0;
+	}
+	if (variable_struct_exists(_data, "armor_upgrade_level")) {
+		global.armor_upgrade_level = _data.armor_upgrade_level;
+	} else {
+		global.armor_upgrade_level = 0;
+	}
+	if (variable_struct_exists(_data, "speed_cigarettes")) {
+		global.speed_cigarettes = _data.speed_cigarettes;
+	} else {
+		global.speed_cigarettes = 0;
 	}
 	
 	// Set active slot

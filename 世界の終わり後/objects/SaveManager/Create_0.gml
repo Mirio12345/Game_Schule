@@ -20,6 +20,16 @@ if (!variable_global_exists("door_states")) {
 if (!variable_global_exists("gold_coins")) {
 	global.gold_coins = 0;
 }
+// Upgrade levels (Weapon/Armor) – saved and loaded by scr_save_system
+if (!variable_global_exists("weapon_upgrade_level")) {
+	global.weapon_upgrade_level = 0;
+}
+if (!variable_global_exists("armor_upgrade_level")) {
+	global.armor_upgrade_level = 0;
+}
+if (!variable_global_exists("speed_cigarettes")) {
+	global.speed_cigarettes = 0;
+}
 if (!variable_global_exists("enemy_lary_coins")) {
 	global.enemy_lary_coins = 10;
 }

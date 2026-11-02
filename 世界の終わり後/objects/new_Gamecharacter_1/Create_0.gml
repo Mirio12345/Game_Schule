@@ -1,5 +1,5 @@
 my_speed = 2.5;
-shoot_cooldown = global.playerShootCooldown;   // Wie lange er zwischen Schüssen wartet (60 Frames = ca. 1 Sekunde)
+shoot_cooldown = scr_weapon_cooldown(global.playerShootCooldown);   // Basis-Cooldown minus Waffen-Upgrades (60 Frames = ca. 1 Sekunde)
 reflect_cooldown = global.playerReflectCooldown;
 drink_cooldown = global.HealCooldown;
 can_shoot = true;
