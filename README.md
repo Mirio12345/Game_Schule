@@ -50,7 +50,7 @@
 
 https://github.com/user-attachments/assets/36c08d08-f01d-4335-be52-9ef3af3f4ffb
 
-Allgemeine Voestellung ⬆️⬆️⬆️
+Allgemeine Vorstellung ⬆️⬆️⬆️
 
 
 
