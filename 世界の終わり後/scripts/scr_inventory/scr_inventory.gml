@@ -5,17 +5,24 @@ function scr_inventory_rebuild()
     global.inventory_items = [];
     
     // Healing Items
-    if (global.HealitemCount > 0)
-    {
-        array_push(global.inventory_items, {
-            name: "Heilitem",
-            spr: s_Healitem,
-            count: global.HealitemCount,
-            desc: "Heilt einen grossen Teil deiner Lebenspunkte.",
-            usable: true,
-            item_type: "heal"
-        });
-    }
+    array_push(global.inventory_items, {
+        name: "Healitem",
+        spr: s_Healitem,
+        count: global.HealitemCount,
+        desc: "E: Stellt Lebenspunkte wieder her.",
+        usable: false,
+        item_type: "heal"
+    });
+
+    // Mentol Healing Item
+    array_push(global.inventory_items, {
+        name: "Healitem Mentol",
+        spr: Healitem_Mentol,
+        count: global.MentolCount,
+        desc: "Q: Gibt 5 Sekunden lang 50% mehr Bewegungsgeschwindigkeit, heilt aber nicht.",
+        usable: false,
+        item_type: "mentol"
+    });
     
     // Gold Coins
     if (variable_global_exists("gold_coins") && global.gold_coins > 0)
@@ -203,18 +210,6 @@ function scr_inventory_use(slot_index)
     
     switch (_type)
     {
-        case "heal":
-        {
-            if (global.player_hp >= global.max_player_hp)
-            {
-                return "Voll HP! Nicht noetig.";
-            }
-            global.HealitemCount -= 1;
-            var _heal = global.HealValue * global.HealMultiplier;
-            global.player_hp = min(global.player_hp + _heal, global.max_player_hp);
-            return "Geheilt! (+" + string(_heal) + " HP)";
-        }
-        
         case "speed":
         {
             // Find player and apply speed boost

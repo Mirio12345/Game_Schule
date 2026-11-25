@@ -9,6 +9,8 @@ global.playerReflectCooldown = 30;
 global.HealValue = global.max_player_hp / 1;
 global.HealitemCount = 3;
 global.MaxHealitemCount = 3;
+global.MentolCount = global.HealitemCount;
+global.MaxMentolCount = global.MaxHealitemCount;
 global.HealCooldown =300;
 //enimy lary
 global.enemyDMG = 10;

@@ -4,6 +4,7 @@ if (keyboard_check(ord("F")) && chest_status == 0)
 	{
 		chest_status = 1;
 		global.HealitemCount = global.MaxHealitemCount;
+		global.MentolCount = global.MaxMentolCount;
 		global.player_hp = global.max_player_hp;
 		// Mark this chest as opened in save state
 		if (!variable_global_exists("chest_states")) { global.chest_states = {}; }

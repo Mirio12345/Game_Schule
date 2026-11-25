@@ -2,6 +2,7 @@ event_inherited();
 
 global.player_hp = global.max_player_hp;
 global.HealitemCount = global.MaxHealitemCount;
+global.MentolCount = global.MaxMentolCount;
 
 if global.latest_checkpoint == 0
 {

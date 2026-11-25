@@ -44,7 +44,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2026.0.0.16",
+    "IDEVersion":"2026.1.0.27",
   },
   "name":"世界の終わり後",
   "resources":[
@@ -93,6 +93,7 @@
     {"id":{"name":"obj_dialogue_manager","path":"objects/obj_dialogue_manager/obj_dialogue_manager.yy",},},
     {"id":{"name":"obj_enemy_boss_bullet","path":"objects/obj_enemy_boss_bullet/obj_enemy_boss_bullet.yy",},},
     {"id":{"name":"obj_enemy_bullet","path":"objects/obj_enemy_bullet/obj_enemy_bullet.yy",},},
+    {"id":{"name":"obj_Healitem_Mentol","path":"objects/obj_Healitem_Mentol/obj_Healitem_Mentol.yy",},},
     {"id":{"name":"obj_inventory_controller","path":"objects/obj_inventory_controller/obj_inventory_controller.yy",},},
     {"id":{"name":"obj_npc_merchant","path":"objects/obj_npc_merchant/obj_npc_merchant.yy",},},
     {"id":{"name":"obj_npc_scout","path":"objects/obj_npc_scout/obj_npc_scout.yy",},},
@@ -142,6 +143,7 @@
     {"id":{"name":"Gamecharacter_nach_sueden_laufen","path":"sprites/Gamecharacter_nach_sueden_laufen/Gamecharacter_nach_sueden_laufen.yy",},},
     {"id":{"name":"Gamecharacter_standart","path":"sprites/Gamecharacter_standart/Gamecharacter_standart.yy",},},
     {"id":{"name":"GamecharaTest","path":"sprites/GamecharaTest/GamecharaTest.yy",},},
+    {"id":{"name":"Healitem_Mentol","path":"sprites/Healitem_Mentol/Healitem_Mentol.yy",},},
     {"id":{"name":"Hp_Bar","path":"sprites/Hp_Bar/Hp_Bar.yy",},},
     {"id":{"name":"Menu_button","path":"sprites/Menu_button/Menu_button.yy",},},
     {"id":{"name":"NeonSigncyan","path":"sprites/NeonSigncyan/NeonSigncyan.yy",},},

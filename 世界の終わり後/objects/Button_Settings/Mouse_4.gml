@@ -17,6 +17,8 @@ catch(_error)
 	global.HealMultiplier = 1;
 	global.HealitemCount = 2;
 	global.MaxHealitemCount = 2;
+	global.MentolCount = global.HealitemCount;
+	global.MaxMentolCount = global.MaxHealitemCount;
 	global.HealCooldown = 300;
 	//enemy lary
 	global.enemyDMG = 15;

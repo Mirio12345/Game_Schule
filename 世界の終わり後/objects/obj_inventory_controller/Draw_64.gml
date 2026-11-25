@@ -1,6 +1,41 @@
 /// @description Inventory Controller - Draw GUI
 /// Draw the inventory overlay when open
 
+// Show the remaining Mentol speed boost time in the HUD.
+if (instance_exists(new_Gamecharacter_1))
+{
+    var _speed_player = instance_find(new_Gamecharacter_1, 0);
+    if (variable_instance_exists(_speed_player, "mentol_speed_active")
+        && _speed_player.mentol_speed_active
+        && _speed_player.alarm[3] > 0)
+    {
+        var _gui_w = display_get_gui_width();
+        var _bar_w = min(360, _gui_w - 32);
+        var _bar_h = 26;
+        var _bar_x = (_gui_w - _bar_w) / 2;
+        var _bar_y = 18;
+        var _fill_ratio = clamp(_speed_player.alarm[3] / 300, 0, 1);
+
+        draw_set_alpha(0.85);
+        draw_set_colour(c_black);
+        draw_rectangle(_bar_x, _bar_y, _bar_x + _bar_w, _bar_y + _bar_h, false);
+        draw_set_alpha(1);
+
+        draw_set_colour(c_aqua);
+        draw_rectangle(_bar_x + 2, _bar_y + 2, _bar_x + 2 + ((_bar_w - 4) * _fill_ratio), _bar_y + _bar_h - 2, false);
+        draw_set_colour(c_white);
+        draw_rectangle(_bar_x, _bar_y, _bar_x + _bar_w, _bar_y + _bar_h, true);
+
+        draw_set_halign(fa_center);
+        draw_set_valign(fa_middle);
+        draw_set_font(-1);
+        draw_set_colour(c_white);
+        draw_text(_gui_w / 2, _bar_y + (_bar_h / 2), "You have 50% more speed");
+        draw_set_halign(fa_left);
+        draw_set_valign(fa_top);
+    }
+}
+
 if (anim_open <= 0) return;
 
 // --- Draw semi-transparent background overlay ---
@@ -85,7 +120,12 @@ if (anim_open >= 0.5)
             var _icon_cx = _slot_x;
             var _icon_cy = _slot_top + (_max_h / 2) + slot_padding;
             
-            draw_sprite_ext(_item.spr, 0, _icon_cx, _icon_cy, _icon_scale, _icon_scale, 0, c_white, _item_alpha);
+            var _icon_frame = 0;
+            if (variable_struct_exists(_item, "item_type") && (_item.item_type == "heal" || _item.item_type == "mentol"))
+            {
+                _icon_frame = min(_item.count, sprite_get_number(_item.spr) - 1);
+            }
+            draw_sprite_ext(_item.spr, _icon_frame, _icon_cx, _icon_cy, _icon_scale, _icon_scale, 0, c_white, _item_alpha);
         }
         
         // Draw item name below icon (inside slot, near bottom)
@@ -167,8 +207,13 @@ if (anim_open >= 0.5)
         // Usable indicator
         var _usable = false;
         if (variable_struct_exists(_sel_item, "usable")) _usable = _sel_item.usable;
-        draw_set_colour(_usable ? c_lime : c_gray);
-        draw_text(_panel_x + 8, _panel_y + _panel_h - 50, _usable ? "[Enter/Click] Benutzen" : "---");
+        var _is_heal_item = variable_struct_exists(_sel_item, "item_type") && (_sel_item.item_type == "heal" || _sel_item.item_type == "mentol");
+        var _heal_key = (variable_struct_exists(_sel_item, "item_type") && _sel_item.item_type == "mentol") ? "Q" : "E";
+        draw_set_colour(_is_heal_item ? c_lime : (_usable ? c_lime : c_gray));
+        var _action_text = _is_heal_item
+            ? "[" + _heal_key + "] Benutzen"
+            : (_usable ? "[Enter/Klick] Benutzen" : "---");
+        draw_text(_panel_x + 8, _panel_y + _panel_h - 50, _action_text);
     }
     
     // --- Draw hint texts ---

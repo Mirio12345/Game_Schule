@@ -62,9 +62,9 @@ if keyboard_check_pressed(vk_escape)
  room_goto(Startscreen);
 }
 
-if (keyboard_check(ord("E"))  && can_heal && (hp != global.max_player_hp))
+if (keyboard_check(ord("E")) && can_heal && hp != global.max_player_hp)
 {
-	// E is also the NPC talk key: don't consume a heal item next to an NPC
+	// E is also the NPC talk key: don't consume a Healitem next to an NPC
 	var _near_npc = instance_nearest(x, y, obj_npc);
 	var _npc_prompt = (_near_npc != noone)
 	                && point_distance(x, y, _near_npc.x, _near_npc.y) < _near_npc.interact_range;
@@ -74,21 +74,30 @@ if (keyboard_check(ord("E"))  && can_heal && (hp != global.max_player_hp))
 	}
 	else
 	{
-	if global.HealitemCount > 0
-	{
-		global.HealitemCount = global.HealitemCount - 1
-		if ((global.player_hp + (global.HealValue * global.HealMultiplier))  <= global.max_player_hp)
+		if (global.HealitemCount > 0)
 		{
-			global.player_hp = global.player_hp + (global.HealValue * global.HealMultiplier);
-		}
-		else
-		{
-			global.player_hp = global.max_player_hp;
+			global.HealitemCount -= 1;
+			var _heal_amount = global.HealValue * global.HealMultiplier;
+			global.player_hp = min(global.player_hp + _heal_amount, global.max_player_hp);
+			can_heal = false;
+			alarm[1] = drink_cooldown;
 		}
 	}
+}
+
+// Q uses Mentol without restoring health.
+if (keyboard_check(ord("Q")) && can_heal && global.MentolCount > 0)
+{
+	global.MentolCount -= 1;
+	if (!mentol_speed_active)
+	{
+		mentol_base_speed = my_speed;
+	}
+	my_speed = mentol_base_speed * 1.50;
+	mentol_speed_active = true;
+	alarm[3] = 300; // 5 seconds
 	can_heal = false;
 	alarm[1] = drink_cooldown;
-	}
 }
 
 
@@ -138,6 +147,7 @@ if keyboard_check(ord("R"))
 		global.latest_checkpoint = 3;
 		}
 		global.HealitemCount = global.MaxHealitemCount;
+		global.MentolCount = global.MaxMentolCount;
 		global.player_hp = global.max_player_hp;
 		global.curent_room = room;
 		// Auto-save at checkpoint
@@ -153,6 +163,7 @@ if keyboard_check(ord("R"))
 		global.latest_checkpoint = 4;
 		}
 		global.HealitemCount = global.MaxHealitemCount;
+		global.MentolCount = global.MaxMentolCount;
 		global.player_hp = global.max_player_hp;
 		global.curent_room = room;
 		// Auto-save at checkpoint
@@ -168,6 +179,7 @@ if keyboard_check(ord("R"))
 		global.latest_checkpoint = 5;
 		}
 		global.HealitemCount = global.MaxHealitemCount;
+		global.MentolCount = global.MaxMentolCount;
 		global.player_hp = global.max_player_hp;
 		global.curent_room = room;
 		// Auto-save at checkpoint
@@ -183,6 +195,7 @@ if keyboard_check(ord("R"))
 		global.latest_checkpoint = 6;
 		}
 		global.HealitemCount = global.MaxHealitemCount;
+		global.MentolCount = global.MaxMentolCount;
 		global.player_hp = global.max_player_hp;
 		global.curent_room = room;
 		// Auto-save at checkpoint

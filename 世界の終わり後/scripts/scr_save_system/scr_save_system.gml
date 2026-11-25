@@ -23,6 +23,8 @@ function scr_save_game(slot) {
 		HealMultiplier:        global.HealMultiplier,
 		HealitemCount:         global.HealitemCount,
 		MaxHealitemCount:      global.MaxHealitemCount,
+		MentolCount:           global.MentolCount,
+		MaxMentolCount:        global.MaxMentolCount,
 		HealCooldown:          global.HealCooldown,
 		
 		// Difficulty
@@ -113,6 +115,21 @@ function scr_load_game(slot) {
 	global.HealMultiplier        = _data.HealMultiplier;
 	global.HealitemCount         = _data.HealitemCount;
 	global.MaxHealitemCount      = _data.MaxHealitemCount;
+	if (variable_struct_exists(_data, "MentolCount")) {
+		global.MentolCount = _data.MentolCount;
+	} else {
+		global.MentolCount = _data.HealitemCount;
+	}
+	if (variable_struct_exists(_data, "MaxMentolCount")) {
+		global.MaxMentolCount = _data.MaxMentolCount;
+	} else {
+		global.MaxMentolCount = _data.MaxHealitemCount;
+	}
+	// Older saves gave Mentol a smaller starting maximum; bring both stocks in line once.
+	if (global.MaxMentolCount != global.MaxHealitemCount) {
+		global.MentolCount = global.HealitemCount;
+		global.MaxMentolCount = global.MaxHealitemCount;
+	}
 	global.HealCooldown          = _data.HealCooldown;
 	
 	// Restore difficulty

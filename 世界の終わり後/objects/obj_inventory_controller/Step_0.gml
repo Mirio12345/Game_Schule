@@ -151,7 +151,10 @@ if (global.inventory_open)
                     }
                     else
                     {
-                        feedback_msg = "Nicht verwendbar!";
+                        var _item_type = variable_struct_exists(_item, "item_type") ? _item.item_type : "";
+                        if (_item_type == "heal") feedback_msg = "Healitem im Spiel mit [E] benutzen.";
+                        else if (_item_type == "mentol") feedback_msg = "Healitem Mentol im Spiel mit [Q] benutzen.";
+                        else feedback_msg = "Nicht verwendbar!";
                         feedback_timer = 60;
                     }
                 }
