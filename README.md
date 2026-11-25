@@ -48,8 +48,7 @@
 
 # Kurze Video Vorstellung
 
-
-https://github.com/user-attachments/assets/d1de42f9-d0b0-4d24-b3f3-61ac056e306c
+https://github.com/user-attachments/assets/36c08d08-f01d-4335-be52-9ef3af3f4ffb
 
 Allgemeine Voestellung ⬆️⬆️⬆️
 
